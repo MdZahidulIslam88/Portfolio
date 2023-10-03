@@ -130,11 +130,7 @@ header{
 .menu2 ul{
     padding-right: 0rem !important;
 }
-.menu2 ul:hover{
-    background-color: #0c1425;
-    color: #FF714A;
 
-}
 .icon-bar1 ul li{
     font-size: 16px;
     width: 32px;
