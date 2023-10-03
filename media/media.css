@@ -2,7 +2,7 @@
 
     .text111{
         text-align: center;
-        margin-top: 13rem;
+        margin-top: 11rem;
     }
     .first-text{
         margin-top: -8rem;
@@ -25,6 +25,7 @@
     }
     .col-md-6{
         position: absolute;
+        margin-top: 4rem !important;
     }
     .greenborder{
         top: 10rem;
@@ -54,7 +55,7 @@
 }
 @media screen and (min-width: 375px) and (max-width: 424px){
     .text111{
-        margin-top: 13rem;
+        margin-top: 10rem;
         text-align: center;
     }
     .first-text{
@@ -79,6 +80,7 @@
     }
     .col-md-6{
         position: absolute;
+        margin-top: 4rem !important;
     }
     .greenborder{
         top: 8rem;
@@ -107,9 +109,10 @@
     
 }
 
+
 @media screen and (min-width: 425px) and (max-width: 767px){
     .text111{
-        margin-top: 11rem;
+        margin-top: 10rem;
         text-align: center;
     }
     .first-text{
@@ -390,4 +393,3 @@
         
     
     }
-   
