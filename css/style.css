@@ -1,14 +1,12 @@
-
-body{
-    background-color: black !important;
-}
-/* SideMenu start */
+/* desktop view start */
 header{
-    width: 250px;
+    width: 230px;
     height: 100vh;
+    background-color: bisque;
+    position: relative;
+    min-height: 100%;
     background-color: #070D1B;
-    position: fixed;
-    border-right: 1px solid #121a2a;
+    padding: 0px !important;
 }
 @media only screen and (max-width: 1023px){
     header{
@@ -18,18 +16,18 @@ header{
         margin-left: 0 !important;
     }
 }
-.col-md-12{
-    padding: 0px !important;
-}
-.top-img img{
+
+header .top-img img{
     width: 50%;
     border: 8px solid #202632;
     border-radius: 50%;
 }
-.text1{
+
+header .text1{
     font-size: 23px;
 }
-.icon-bar ul li{
+
+header .icon-bar ul li{
     font-size: 16px;
     width: 32px;
     height: 32px;
@@ -39,18 +37,26 @@ header{
     display: inline-block;
     color: white;
     margin-right: 10px;
-    margin-top: 10px;
+    margin-top: 5px;
 }
-.icon-bar ul li:hover{
+header .text2 {
+    position: absolute;
+    bottom: 0;
+    color: #5C6073;
+}
+header .icon-bar ul li:hover{
     background-color: #FF714A;
     color: white;
     transition: .8s ease;
 }
-.icon-bar ul{
+header .icon-bar ul{
     padding-left: 0rem;
     
 }
-.menubar a{ 
+.menubar {
+    padding: 0px !important;
+}
+header .menubar a{ 
     padding-bottom:15px;
     padding-top: 15px;
     color: #FFFF;
@@ -59,48 +65,24 @@ header{
     border-bottom: 1px solid #121a2a;
     letter-spacing: 1.2px;
 }
-
-.menubar ul li a:hover{
+header .menubar ul li a:hover{
     color: #FF714A;
     background-color: #0c1425;
     transition: .4s ease;
     padding-bottom:15px;
     padding-top: 15px;
 }
-.menubar li.active a:after {
+header .menubar li.active a:after {
     background-color: #ff714a;
 }
-.menubar li{
-    position: relative;
-}
-.menubar li a:hover:after {
-
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    content: '';
-    width: 2px;
-    height: 100%;
-    margin: 0 auto;
-    background-color: #eee;
-    transition: .6s ease-in-out;
-}
-/* .active{
-    color: #FF714A;
-    background-color: #0c1425;
-} */
 .fa{
     margin-right: 10px;
     margin-left: -25px;
 }
-.text2{
-    color: #5C6073;
-    margin-top: 3.5rem;
-    font-size: 14px;
-}
+/* desktop view end */
 
-/* SideMenu end */
-/*mobileview  start*/
+/* mobile view start */
+
 .bg2{
     background-color: #070D1B ;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
@@ -113,9 +95,10 @@ header{
     background-color: #070D1B;
     border-bottom: 1px solid #121a2a;
 }
+
 .menu2 a{ 
-    padding-bottom:15px;
-    padding-top: 15px;
+    padding-bottom:10px;
+    padding-top: 10px;
     color: #FFFF;
     font-size: 17px;
     padding: auto 60px auto 70px;
@@ -127,10 +110,10 @@ header{
     padding: 25px 0  !important;
     
 }
+
 .menu2 ul{
     padding-right: 0rem !important;
 }
-
 .icon-bar1 ul li{
     font-size: 16px;
     width: 32px;
@@ -141,20 +124,20 @@ header{
     display: inline-block;
     color: white;
     margin-right: 10px;
-    margin-top: 10px;
 
     
 }
 
 .icon-bar1 ul{
     padding-left: 0rem;
+    margin-top: 7rem;
     
 }
 .icon-bar1 a{
     border-bottom: none;
 }
 .icon-bar1{
-    margin-top: 2rem !important;
+    margin-top: 5rem !important;
 }
 
 
@@ -167,49 +150,104 @@ header{
     font-size: 27px;
     color: white !important;
 } 
+nav  .text2{
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    color: #5C6073;
+    text-align: center;
+}
+@media screen and (max-width:425px){
+    .offcanvas.offcanvas-start{
+        width: 85% !important;
+    }
+    nav  .text2{
+       font-size: 14px;
+    }
+    
+}
 
-/*mobileview end*/
+/* mobile view end */
+
+
 /* Home start */
- main{
-    margin-left: 260px;
-    height: 100vh;
+
+
+main{
+    margin-left: 240px;
     background-color: #070D1B;
+    position: relative;
+    height: 100vh;
+ }
+ .text111{
+    
+    margin-top: 15rem;
+
+    }
+    
+    .first-text{
+    font-size: 40px;
+    font-weight: 700;
+    margin-left: 2rem;
+    }
+    .text111 .sec-text{
+    font-size: 30px;
+    color: #FFFF;
+    font-weight: 500;
+    margin-left: 2rem;
+
+    }
+    .text111 .third-text{
+    font-size: 30px;
+    color: #FF714A;
+    letter-spacing: 2px;
+
+    }
+ .homeimg{
+    margin-top: 3rem;
  }
 
-
-.col-md-6{
-    position: relative;
-    height: auto;
-}
-.greenborder{
+ .greenborder{
     position: absolute;
-    width: 85%;
+    width: 45%;
 }
 .me{
     position: absolute;
-    width: 85%;
+    width: 45%;
     border-radius: 100%;
+    margin-left: -.7rem;
+    margin-top: 1.2rem;
 }
 .xd{
     position: absolute;
-    width: 5%;
+    width: 4%;
+    top: 8rem;
+    right: 28.5rem;
 }
 .wordpress{
     position: absolute;
-    width: 5%;
+    width: 4%;
+    top: 8rem;
+    right: 6.3rem;
 }
 .html5{
     position: absolute;
-    width: 5%;
+    width: 4%;
+    top: 22rem;
+    right: 32.3rem;
 }
 .php{
     position: absolute;
-    width: 5%;
+    width: 4%;
+    top: 22rem;
+    right: 2.3rem;
 }
+
+
 .logo-object-top{
     animation: logo-object-top 5s linear infinite;
-    top: 5.6rem;
-    right: 36rem;
+
 }
 @keyframes logo-object-top{
     0%{
@@ -225,8 +263,7 @@ header{
 
 .logo-object-top-2{
     animation: logo-object-top-2 10s linear infinite;
-    top: 5.6rem;
-    right: 12.8rem;
+  
 }
 @keyframes logo-object-top-2{
     0%{
@@ -242,8 +279,7 @@ header{
 
 .logo-object-bottom{
     animation: logo-object-bottom 10s linear infinite;
-    top: 20rem;
-    right: 40rem;
+    
 }
 @keyframes logo-object-bottom{
     0%{
@@ -259,8 +295,7 @@ header{
 
 .logo-object-bottom-2{
     animation: logo-object-bottom-2 5s linear infinite;
-    top: 20rem;
-    right: 8.7rem;
+    
 }
 @keyframes logo-object-bottom-2{
     0%{
@@ -273,4 +308,269 @@ header{
         transform: translateX(-3px);
     }
 } 
-/* Home end */
+@media screen and (min-width:320px) and (max-width:374px) {
+    .text111{
+        margin-top: 6rem;
+        text-align: center;
+        }
+    .first-text{
+        font-size: 25px !important;
+        }
+        .text111 .sec-text{
+        font-size: 20px !important;
+        margin-left: 2.8rem !important;
+    
+        }
+        .text111 .third-text{
+        font-size: 20px !important;
+        }
+
+        .greenborder{
+            top: 12rem;
+            left: 1rem;
+            width: 90%;
+        }
+        .me{
+            width: 90%;
+            top: 12.1rem;
+            left: 1.7rem;
+        }
+        .xd{
+            margin-top: 8rem;
+            left: 2.8rem;
+            width: 6%;
+        }
+        .wordpress{
+            margin-top: 8rem;
+            right: 2.8rem;
+            width: 6%;
+        }
+        .html5{
+            top: 25rem;
+            left: 1.2rem;
+            width: 6%;
+        }
+        .php{
+            top: 25rem;
+            right: 1.2rem;
+            width: 6%;
+        }
+}
+
+@media screen and (min-width:375px) and (max-width:424px) {
+    .text111{
+        margin-top: 6rem;
+        text-align: center;
+        }
+    .first-text{
+        font-size: 28px !important;
+        }
+        .text111 .sec-text{
+        font-size: 23px !important;
+        margin-left: 2.8rem !important;
+    
+        }
+        .text111 .third-text{
+        font-size: 23px !important;
+        }
+
+        .greenborder{
+            top: 12rem;
+            left: 1.3rem;
+            width: 90%;
+        }
+        .me{
+            width: 90%;
+            top: 12.1rem;
+            left: 1.8rem;
+        }
+        .xd{
+            margin-top: 9rem;
+            left: 2.8rem;
+            width: 6%;
+        }
+        .wordpress{
+            margin-top: 9rem;
+            right: 2.8rem;
+            width: 6%;
+        }
+        .html5{
+            top: 26rem;
+            left: 1.2rem;
+            width: 6%;
+        }
+        .php{
+            top: 26rem;
+            right: 1.2rem;
+            width: 6%;
+        }
+}
+
+@media screen and (min-width:425px) and (max-width:767px) {
+    .text111{
+        margin-top: 5rem;
+        text-align: center;
+        }
+    .first-text{
+        font-size: 29px !important;
+        }
+        .text111 .sec-text{
+        font-size: 24px !important;
+        margin-left: 2.8rem !important;
+    
+        }
+        .text111 .third-text{
+        font-size: 24px !important;
+        }
+
+        .greenborder{
+            top: 9.5rem;
+            left: 1.5rem;
+            width: 90%;
+        }
+        .me{
+            width: 90%;
+            top: 9.5rem;
+            left: 2.2rem;
+        }
+        .xd{
+            margin-top: 8rem;
+            left: 2.8rem;
+            width: 6%;
+        }
+        .wordpress{
+            margin-top: 8rem;
+            right: 2.5rem;
+            width: 6%;
+        }
+        .html5{
+            top: 27rem;
+            left: 2.2rem;
+            width: 6%;
+        }
+        .php{
+            top: 27rem;
+            right: 1.9rem;
+            width: 6%;
+        }
+}
+
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+        
+        .first-text{
+        font-size: 40px;
+        }
+        .text111 .sec-text{
+        font-size: 28px;
+    
+        }
+        .text111 .third-text{
+        font-size: 28px;
+        }
+     .homeimg{
+        margin-top: 7rem;
+     }
+    
+     .greenborder{
+        position: absolute;
+    }
+    .xd{
+        top: 11rem;
+        left: 26.9rem;
+    }
+    .wordpress{
+        top: 11rem;
+        right: 3.9rem;
+    }
+    .html5{
+        top: 22rem;
+        left:24.9rem;
+    }
+    .php{
+        top: 22rem;
+        right: 1.7rem;
+    }
+}
+
+
+@media screen and (min-width:1024px) and (max-width:1240px) {
+        
+    .first-text{
+    font-size: 40px;
+    }
+    .text111 .sec-text{
+    font-size: 28px;
+
+    }
+    .text111 .third-text{
+    font-size: 28px;
+    }
+ .homeimg{
+    margin-top: 7rem;
+ }
+
+ .greenborder{
+    position: absolute;
+}
+.xd{
+    top: 11rem;
+    left: 27.3rem;
+}
+.wordpress{
+    top: 11rem;
+    right: 4.1rem;
+}
+.html5{
+    top: 22rem;
+    left:25.2rem;
+}
+.php{
+    top: 22rem;
+    right: 1.7rem;
+}
+}
+
+
+@media screen and (min-width:1440px) and (max-width:2560px) {
+    .text111{
+        margin-top: 20rem;
+        }  
+    .first-text{
+    font-size: 50px;
+    }
+    .text111 .sec-text{
+    font-size: 38px;
+
+    }
+    .text111 .third-text{
+    font-size: 38px;
+    }
+ .homeimg{
+    margin-top: 9rem;
+ }
+
+ .greenborder{
+    position: absolute;
+}
+.xd{
+    top: 16rem;
+    left: 40.3rem;
+}
+.wordpress{
+    top: 16rem;
+    right: 5.1rem;
+}
+.html5{
+    top: 31rem;
+    left:38.2rem;
+}
+.php{
+    top: 31rem;
+    right: 2.9rem;
+}
+}
+
+
+
+
