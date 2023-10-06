@@ -8,40 +8,28 @@
     }
     .skills1::before{
         content: '';
-        position: absolute;
         width:120px;
         height: 2px;
         left:30%;
-        margin-top: 3rem;
-        background-color: #3f4551;
     
     }
     .skills1::after{
         content: '';
-        position: absolute;
         width:50px;
         height: 2px;
         left:50%;
-        transform: translateX(-50%);
-        margin-top: 3rem;
-        
-        background-color: #FF714A;
     
     }
     .rowtext12 h2{
-        color: #FF714A;
         font-size: 27px;
     }
     .rowtext12 h5{
-        color: #A9ADB8;
         font-size: 14px;
     }
     .rowtext12 h4{
-        color: #F5F3F8;
         font-size: 19px;
     }
     .rowtext12 h6{
-        color: #A9ADB8;
         font-size: 16px;
         line-height: 25px;
         letter-spacing: 1.3px;
@@ -70,13 +58,9 @@
     }
     .skills1::before{
         content: '';
-        position: absolute;
         width:130px;
         height: 2px;
         left:32%;
-        margin-top: 3rem;
-        background-color: #3f4551;
-    
     }
     
     .p1,.fn{
