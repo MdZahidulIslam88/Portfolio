@@ -1,4 +1,63 @@
-/* desktop view start */
+
+
+/* Waves Animation start*/
+
+.waves {
+    position: absolute;
+    width: 100%;
+    height: 15vh;
+    min-height: 100px;
+    max-height: 150px;
+    bottom: 0;
+    left: 0;
+}
+
+.parallax>use {
+    animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
+}
+
+.parallax>use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+}
+
+.parallax>use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+}
+
+.parallax>use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+}
+
+.parallax>use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+}
+
+@keyframes move-forever {
+    0% {
+        transform: translate3d(-90px, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(85px, 0, 0);
+    }
+}
+
+
+/*Shrinking for mobile*/
+
+@media (max-width: 768px) {
+    .waves {
+        height: 40px;
+        min-height: 40px;
+    }
+}
+
+/* Waves Animation end*/
+  /* desktop view start */
 header{
     width: 230px;
     height: 100vh;
@@ -85,7 +144,6 @@ header .menubar li.active a:after {
 
 .bg2{
     background-color: #070D1B ;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
 .name1{
@@ -179,30 +237,59 @@ main{
     background-color: #070D1B;
     position: relative;
     height: 100vh;
+    
  }
+ 
  .text111{
     
-    margin-top: 15rem;
-
+    margin-top: 12rem;
+    margin-left: 2rem;
     }
     
     .first-text{
-    font-size: 40px;
+    font-size: 37px;
     font-weight: 700;
-    margin-left: 2rem;
     }
+    .text56{
+        font-size: 45px;
+        font-weight: 700;
+        }
     .text111 .sec-text{
     font-size: 30px;
     color: #FFFF;
     font-weight: 500;
-    margin-left: 2rem;
 
     }
     .text111 .third-text{
     font-size: 30px;
     color: #FF714A;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
+    border-bottom: 2px solid #FF714A;
 
+    }
+   main .icon-bar{
+    display: flex;
+    margin-left: -2rem;
+   }
+    main .icon-bar ul li{
+        font-size: 16px;
+        display: inline-block ;
+        width: 32px;
+        height: 32px;
+        line-height: 30px;
+        border-radius: 50%;
+        background-color: transparent;
+        margin-right: 15px;
+        margin-top: 5px;
+        border: 2px solid #141A27;
+    }
+    main .icon-bar a {
+        color: #ccc;
+    }
+    main .icon-bar ul li:hover{
+       border: 1px solid #FF714A;
+        color: white;
+        transition: .8s ease;
     }
  .homeimg{
     margin-top: 3rem;
@@ -211,8 +298,10 @@ main{
  .greenborder{
     position: absolute;
     width: 45%;
+    z-index: 999;
 }
 .me{
+    z-index: 999;
     position: absolute;
     width: 45%;
     border-radius: 100%;
@@ -220,24 +309,28 @@ main{
     margin-top: 1.2rem;
 }
 .xd{
+    z-index: 999;
     position: absolute;
     width: 4%;
     top: 8rem;
     right: 28.5rem;
 }
 .wordpress{
+    z-index: 999;
     position: absolute;
     width: 4%;
     top: 8rem;
     right: 6.3rem;
 }
 .html5{
+    z-index: 999;
     position: absolute;
     width: 4%;
     top: 22rem;
     right: 32.3rem;
 }
 .php{
+    z-index: 999;
     position: absolute;
     width: 4%;
     top: 22rem;
@@ -311,47 +404,55 @@ main{
 @media screen and (min-width:320px) and (max-width:374px) {
     .text111{
         margin-top: 6rem;
-        text-align: center;
         }
     .first-text{
-        font-size: 25px !important;
+        font-size: 19px !important;
         }
+        .text56{
+            font-size: 22px !important;
+            font-weight: 700;
+            }
         .text111 .sec-text{
         font-size: 20px !important;
-        margin-left: 2.8rem !important;
+        margin-bottom: 5px;
     
         }
         .text111 .third-text{
         font-size: 20px !important;
         }
-
+        main .icon-bar ul li{
+            font-size: 14px !important;
+            width: 25px;
+            height: 25px;
+            line-height: 24px;
+        }
         .greenborder{
-            top: 12rem;
+            top: 15rem;
             left: 1rem;
             width: 90%;
         }
         .me{
             width: 90%;
-            top: 12.1rem;
+            top: 15.1rem;
             left: 1.7rem;
         }
         .xd{
-            margin-top: 8rem;
+            margin-top: 11rem;
             left: 2.8rem;
             width: 6%;
         }
         .wordpress{
-            margin-top: 8rem;
+            margin-top: 11rem;
             right: 2.8rem;
             width: 6%;
         }
         .html5{
-            top: 25rem;
+            top: 28rem;
             left: 1.2rem;
             width: 6%;
         }
         .php{
-            top: 25rem;
+            top: 28rem;
             right: 1.2rem;
             width: 6%;
         }
@@ -359,48 +460,56 @@ main{
 
 @media screen and (min-width:375px) and (max-width:424px) {
     .text111{
-        margin-top: 6rem;
-        text-align: center;
+        margin-top: 5.5rem;
         }
     .first-text{
-        font-size: 28px !important;
+        font-size: 20px !important;
         }
+        .text56{
+            font-size: 23px !important;
+            font-weight: 700;
+            }
         .text111 .sec-text{
-        font-size: 23px !important;
-        margin-left: 2.8rem !important;
+        font-size: 18px !important;
+        margin-bottom: 5px;
     
         }
         .text111 .third-text{
-        font-size: 23px !important;
+        font-size: 18px !important;
         }
-
+        main .icon-bar ul li{
+            font-size: 14px !important;
+            width: 25px;
+            height: 25px;
+            line-height: 24px;
+        }
         .greenborder{
-            top: 12rem;
+            top: 12.6rem;
             left: 1.3rem;
             width: 90%;
         }
         .me{
             width: 90%;
-            top: 12.1rem;
+            top: 12.7rem;
             left: 1.8rem;
         }
         .xd{
-            margin-top: 9rem;
+            margin-top: 9.6rem;
             left: 2.8rem;
             width: 6%;
         }
         .wordpress{
-            margin-top: 9rem;
+            margin-top: 9.6rem;
             right: 2.8rem;
             width: 6%;
         }
         .html5{
-            top: 26rem;
+            top: 26.6rem;
             left: 1.2rem;
             width: 6%;
         }
         .php{
-            top: 26rem;
+            top: 26.6rem;
             right: 1.2rem;
             width: 6%;
         }
@@ -408,49 +517,57 @@ main{
 
 @media screen and (min-width:425px) and (max-width:767px) {
     .text111{
-        margin-top: 5rem;
-        text-align: center;
+        margin-top: 3.5rem;
         }
     .first-text{
-        font-size: 29px !important;
+        font-size: 23px !important;
         }
+        .text56{
+            font-size: 25px !important;
+            font-weight: 700;
+            }
         .text111 .sec-text{
-        font-size: 24px !important;
-        margin-left: 2.8rem !important;
-    
+        font-size: 20px !important;
+        margin-bottom: 4px;
         }
         .text111 .third-text{
-        font-size: 24px !important;
+        font-size: 20px !important;
+        }
+        main .icon-bar ul li{
+            font-size: 14px !important;
+            width: 25px;
+            height: 25px;
+            line-height: 24px;
         }
 
         .greenborder{
-            top: 9.5rem;
-            left: 1.5rem;
-            width: 90%;
+            top: 11rem;
+            left: 2rem;
+            width: 85%;
         }
         .me{
-            width: 90%;
-            top: 9.5rem;
-            left: 2.2rem;
+            width: 85%;
+            top: 11rem;
+            left: 2.7rem;
         }
         .xd{
-            margin-top: 8rem;
-            left: 2.8rem;
+            margin-top: 9rem;
+            left: 3.3rem;
             width: 6%;
         }
         .wordpress{
-            margin-top: 8rem;
-            right: 2.5rem;
+            margin-top: 9rem;
+            right: 3rem;
             width: 6%;
         }
         .html5{
-            top: 27rem;
-            left: 2.2rem;
+            top: 28rem;
+            left: 2.7rem;
             width: 6%;
         }
         .php{
-            top: 27rem;
-            right: 1.9rem;
+            top: 28rem;
+            right: 2.4rem;
             width: 6%;
         }
 }
@@ -459,14 +576,18 @@ main{
 @media screen and (min-width:768px) and (max-width:1023px) {
         
         .first-text{
-        font-size: 40px;
+        font-size: 35px;
         }
+        .text56{
+            font-size: 35px !important;
+            font-weight: 700;
+            }
         .text111 .sec-text{
-        font-size: 28px;
+        font-size: 25px;
     
         }
         .text111 .third-text{
-        font-size: 28px;
+        font-size: 25px;
         }
      .homeimg{
         margin-top: 7rem;
@@ -497,8 +618,11 @@ main{
 @media screen and (min-width:1024px) and (max-width:1240px) {
         
     .first-text{
-    font-size: 40px;
+    font-size: 35px;
     }
+    .text56{
+        font-size: 35px !important;
+        }
     .text111 .sec-text{
     font-size: 28px;
 
@@ -537,14 +661,24 @@ main{
         margin-top: 20rem;
         }  
     .first-text{
-    font-size: 50px;
+    font-size: 45px;
     }
+    .text56{
+        font-size: 50px !important;
+        }
     .text111 .sec-text{
     font-size: 38px;
 
     }
     .text111 .third-text{
     font-size: 38px;
+    }
+    main .icon-bar ul li{
+        font-size: 25px !important;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+
     }
  .homeimg{
     margin-top: 9rem;
@@ -570,7 +704,3 @@ main{
     right: 2.9rem;
 }
 }
-
-
-
-
