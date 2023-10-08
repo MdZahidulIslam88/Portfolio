@@ -213,7 +213,6 @@ main{
     width: 100%;
     height: 100%;
     position: relative;
-    margin-top: 2rem;
  }
 
  .greenborder{
@@ -226,34 +225,101 @@ main{
     border-radius: 100%;
     margin-top: 2px;
 }
-/* .xd{
+/* 
+.homeimg1{
+    position: fixed;
+}
+.xd{
     z-index: 999;
     position: absolute;
-    width: 4%;
+    width: 8%;
     top: 8rem;
-    right: 28.5rem;
+    right: 29.5rem;
 }
 .wordpress{
     z-index: 999;
     position: absolute;
-    width: 4%;
+    width: 8%;
     top: 8rem;
-    right: 6.3rem;
+    right: 1.3rem;
 }
 .html5{
     z-index: 999;
     position: absolute;
-    width: 4%;
+    width: 8%;
     top: 22rem;
-    right: 32.3rem;
+    right: 30.3rem;
 }
 .php{
     z-index: 999;
     position: absolute;
-    width: 4%;
+    width: 8%;
     top: 22rem;
-    right: 2.3rem;
-} */
+    right: .3rem;
+}
+.logo-object-top{
+    animation: logo-object-top 5s linear infinite;
+
+}
+@keyframes logo-object-top{
+    0%{
+        transform: translateX(-5px);
+    }
+    50%{
+        transform: translateX(5px);
+    }
+    100%{
+        transform: translateX(-5px);
+    }
+}
+
+.logo-object-top-2{
+    animation: logo-object-top-2 10s linear infinite;
+  
+}
+@keyframes logo-object-top-2{
+    0%{
+        transform: translateX(-3px);
+    }
+    50%{
+        transform: translateX(3px);
+    }
+    100%{
+        transform: translateX(-3px);
+    }
+}
+
+.logo-object-bottom{
+    animation: logo-object-bottom 10s linear infinite;
+    
+}
+@keyframes logo-object-bottom{
+    0%{
+        transform: translateX(-3px);
+    }
+    50%{
+        transform: translateX(3px);
+    }
+    100%{
+        transform: translateX(-3px);
+    }
+}
+
+.logo-object-bottom-2{
+    animation: logo-object-bottom-2 5s linear infinite;
+    
+}
+@keyframes logo-object-bottom-2{
+    0%{
+        transform: translateX(-3px);
+    }
+    50%{
+        transform: translateX(3px);
+    }
+    100%{
+        transform: translateX(-3px);
+    }
+}  */
 
 /* Waves Animation start*/
 .hero_area{
