@@ -1,4 +1,4 @@
-let typed = new Typed('.third-text',{
+let typed = new Typed('.text10',{
     strings: ['web designer!','ui designer!', 'web developer!'],
     typeSpeed: 100,
     backSpeed: 100,
