@@ -318,3 +318,222 @@ main{
 /* Waves Animation end*/
 
 
+
+
+@media screen and (min-width:375px) and (max-width:390px) {
+   
+    .text111{
+        margin-top: 5.5rem;
+        margin-bottom: -2rem;
+        }
+    .first-text{
+        font-size: 20px !important;
+        }
+        .text56{
+            font-size: 23px !important;
+            font-weight: 700;
+            }
+        .text111 .sec-text{
+        font-size: 18px !important;
+        margin-bottom: 5px;
+    
+        }
+        .text111 .third-text{
+        font-size: 18px !important;
+        }
+       .homeimg{
+        margin-top: -7rem;
+       }
+}
+
+@media screen and (min-width:391px) and (max-width:424px) {
+   
+    .text111{
+        margin-top: 5.5rem;
+        text-align: center;
+        }
+    .first-text{
+        font-size: 20px !important;
+        }
+        .text56{
+            font-size: 23px !important;
+            font-weight: 700;
+            }
+        .text111 .sec-text{
+        font-size: 18px !important;
+        margin-bottom: 5px;
+    
+        }
+        .text111 .third-text{
+        font-size: 18px !important;
+        }
+       .homeimg{
+        margin-top: 5.8rem;
+
+       }
+       .hero_area{
+        position: relative;
+        height: 14vh;
+    }
+    .waves {
+        min-height: 50px;
+        max-height: 80px;
+    }
+}
+
+
+@media screen and (min-width:425px) and (max-width:767px) {
+    .text111{
+        margin-top: 3.5rem;
+        }
+    .first-text{
+        font-size: 23px !important;
+        }
+        .text56{
+            font-size: 25px !important;
+            font-weight: 700;
+            }
+        .text111 .sec-text{
+        font-size: 20px !important;
+        margin-bottom: 4px;
+        }
+        .text111 .third-text{
+        font-size: 20px !important;
+        }
+        .homeimg{
+            margin-top: -9rem;
+           }
+}
+
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+        
+        .first-text{
+        font-size: 30px;
+        }
+        .text56{
+            font-size: 32px !important;
+            font-weight: 700;
+            }
+        .text111 .sec-text{
+        font-size: 25px;
+    
+        }
+        .text111 .third-text{
+        font-size: 25px;
+        }
+     .homeimg{
+        margin-top: 7rem;
+     }
+    
+     .greenborder{
+        position: absolute;
+    }
+    .xd{
+        top: 11rem;
+        left: 26.9rem;
+    }
+    .wordpress{
+        top: 11rem;
+        right: 3.9rem;
+    }
+    .html5{
+        top: 22rem;
+        left:24.9rem;
+    }
+    .php{
+        top: 22rem;
+        right: 1.7rem;
+    }
+}
+
+
+@media screen and (min-width:1024px) and (max-width:1240px) {
+        
+    .first-text{
+    font-size: 35px;
+    }
+    .text56{
+        font-size: 35px !important;
+        }
+    .text111 .sec-text{
+    font-size: 28px;
+
+    }
+    .text111 .third-text{
+    font-size: 28px;
+    }
+ .homeimg{
+    margin-top: 7rem;
+ }
+
+ .greenborder{
+    position: absolute;
+}
+.xd{
+    top: 11rem;
+    left: 27.3rem;
+}
+.wordpress{
+    top: 11rem;
+    right: 4.1rem;
+}
+.html5{
+    top: 22rem;
+    left:25.2rem;
+}
+.php{
+    top: 22rem;
+    right: 1.7rem;
+}
+}
+
+
+@media screen and (min-width:1440px) and (max-width:2560px) {
+    .text111{
+        margin-top: 20rem;
+        }  
+    .first-text{
+    font-size: 45px;
+    }
+    .text56{
+        font-size: 50px !important;
+        }
+    .text111 .sec-text{
+    font-size: 38px;
+
+    }
+    .text111 .third-text{
+    font-size: 38px;
+    }
+    main .icon-bar ul li{
+        font-size: 25px !important;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+
+    }
+ .homeimg{
+    margin-top: 9rem;
+ }
+
+ .greenborder{
+    position: absolute;
+}
+.xd{
+    top: 16rem;
+    left: 40.3rem;
+}
+.wordpress{                
+    top: 16rem;
+    right: 5.1rem;
+}
+.html5{
+    top: 31rem;
+    left:38.2rem;
+}
+.php{
+    top: 31rem;
+    right: 2.9rem;
+}
+}
