@@ -88,6 +88,18 @@ span{
     border: 1px solid #232935;
     background-color: #101624 !important;
 }
+button.btn.btn1{
+    background: transparent;
+    border: 2px solid #FF714A;
+    transition: all 0.85s ease-in-out;
+}
+button.btn.btn1 a{
+    text-decoration: none;
+}
+
+button.btn.btn1:hover{
+    background-color: #FF714A;
+}
 .responsive-map{
     overflow: hidden;
     padding-bottom:82%;
