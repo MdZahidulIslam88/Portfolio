@@ -187,26 +187,24 @@ main{
     }
     
     .text7{
-    font-size: 37px;
-    font-weight: 700;
-    }
-    .text8{
-        font-size: 45px;
-        font-weight: 700;
+        font-size: 21px;
+        font-weight: 500;
+        color: #f6f6f6e0;
         }
-    .text9{
-    font-size: 30px;
-    color: #FFFF;
-    font-weight: 500;
-
-    }
-    .text10{
-    font-size: 30px;
-    color: #FF714A;
-    letter-spacing: 3px;
-    border-bottom: 2px solid #FF714A;
-
-    }
+        .text8{
+            font-size: 45px;
+            font-weight: 700;
+            }
+        .text9{
+        font-size: 30px;
+        color: #FFFF;
+        font-weight: 500;
+        }
+        .text10{
+        font-size: 30px;
+        color: #FF714A;
+        letter-spacing: 3px;
+        }
     .btn11{
         margin-top: -.7rem;
         z-index: 5;
@@ -419,13 +417,13 @@ main{
 
 @media screen and (min-width:320px) and (max-width:374px) {
     .hometext{
-        margin-top: 2rem;
+        margin-top: 1rem;
         padding: 0 2%;
-        margin-bottom: -1rem;
+        margin-bottom: 3px;
         text-align: center;
         }
         .text7{
-            font-size: 18px;
+            font-size: 16px;
             }
             .text8{
                 font-size: 25px;
@@ -444,13 +442,14 @@ main{
 
 @media screen and (min-width:375px) and (max-width:390px) {
     .hometext{
-        margin-top: 1rem;
+        margin-top: 0rem;
         padding: 0 2%;
-        margin-bottom: 1.5rem;
+        margin-bottom: -.8rem;
         text-align: center;
         }
         .text7{
-            font-size: 18px;
+            font-size: 16px;
+            margin-bottom: 2px;
             }
             .text8{
                 font-size: 25px;
@@ -472,7 +471,7 @@ main{
 
 @media screen and (min-width:391px) and (max-width:424px) {
     .hometext{
-        margin-top: 2rem;
+        margin-top: 3rem;
         padding: 0 2%;
         margin-bottom: -5rem;
         text-align: center;
@@ -504,12 +503,12 @@ main{
 
 @media screen and (min-width:425px) and (max-width:767px) {
     .hometext{
-        margin-top: 0rem;
+        margin-top: 3px;
         margin-bottom: 0rem;
         text-align: center;
         }
         .text7{
-            font-size: 18px;
+            font-size: 16px;
             margin-bottom: -0rem;
             }
             .text8{
@@ -525,20 +524,26 @@ main{
             margin-bottom: 11px !important;
             }
         .homeimg{
-            margin-top: -1rem;
+            margin-top: -.3rem !important;
+            width: 90%;
+            left: 20px;
            }
            .me{
             margin-top: 4px !important;
+        }
+        .btn11{
+            font-size: 14px;
         }
 }
 
 
 @media screen and (min-width:768px) and (max-width:1023px) {
     .hometext{
-        margin-top: 8rem;
+        margin-top: 8.8rem;
         }
         .text7{
-            font-size: 23px;
+            font-size: 18px;
+            margin-bottom: 0px !important;
             }
             .text8{
                 font-size: 30px;
@@ -559,15 +564,19 @@ main{
         .me{
             margin-top: 4px !important;
         }
+        .btn11{
+            font-size: 14px !important;
+        }
 }
 
 
 @media screen and (min-width:1024px) and (max-width:1240px) {
     .hometext{
-        margin-top: 12rem;
+        margin-top: 13rem;
         }
         .text7{
-            font-size: 25px;
+            font-size: 20px;
+            margin-bottom: 0px;
             }
             .text8{
                 font-size: 35px;
@@ -587,6 +596,9 @@ main{
         }
         .me{
             margin-top: 4px !important;
+        }
+        .btn11{
+            margin-top: 3px !important;
         }
 }
 
