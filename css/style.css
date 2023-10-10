@@ -181,7 +181,6 @@ main{
     background-color: #070D1B;
     
  }
- 
  .hometext{
     margin-top: 12rem;
     padding: 0 5%;
@@ -404,7 +403,7 @@ main{
 
 /*Shrinking for mobile*/
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     
     .hero_area{
         height: 4vh !important;
@@ -413,7 +412,7 @@ main{
         height: 40px !important;
         min-height: 40px !important;
     }
-}
+} */
 
 /* Waves Animation end*/
 
