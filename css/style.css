@@ -499,7 +499,7 @@ main{
    
     
        .homeimg{
-        margin-top: 5.8rem !important;
+        margin-top: 8.8rem !important;
         margin-bottom: 4rem;
        }
        .me{
@@ -534,10 +534,18 @@ main{
             margin-bottom: 11px !important;
             }
         .homeimg{
-            margin-top: -1rem;
+            margin-top: -.3rem !important;
+            width: 94%;
+            left: 14px;
            }
            .me{
             margin-top: 4px !important;
+        }
+        .btn11{
+            font-size: 14px;
+        }
+        .hero_area{
+            height: 2.4vh !important;
         }
 }
 
