@@ -1,7 +1,7 @@
 
 
   /* desktop view start */
-header{
+  header{
     width: 230px;
     height: 100vh;
     background-color: bisque;
@@ -492,7 +492,7 @@ main{
    
     
        .homeimg{
-        margin-top: 5.8rem !important;
+        margin-top: 5.5rem !important;
         margin-bottom: 3rem !important;
        }
        .me{
