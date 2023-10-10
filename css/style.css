@@ -1,7 +1,7 @@
 
 
   /* desktop view start */
-  header{
+header{
     width: 230px;
     height: 100vh;
     background-color: bisque;
@@ -179,6 +179,7 @@ main{
     height: auto;
     margin-left: 240px;
     background-color: #070D1B;
+    
  }
  
  .hometext{
@@ -187,9 +188,8 @@ main{
     }
     
     .text7{
-    font-size: 21px;
-    font-weight: 500;
-    color: #f6f6f6e0;
+    font-size: 37px;
+    font-weight: 700;
     }
     .text8{
         font-size: 45px;
@@ -199,11 +199,14 @@ main{
     font-size: 30px;
     color: #FFFF;
     font-weight: 500;
+
     }
     .text10{
     font-size: 30px;
     color: #FF714A;
     letter-spacing: 3px;
+    border-bottom: 2px solid #FF714A;
+
     }
     .btn11{
         margin-top: -.7rem;
@@ -237,8 +240,7 @@ main{
     }
     .btn11:hover::before{
         transform: scaleX(1);
-    }
-   
+    }   
  .homeimg{
     width: 100%;
     height: 100%;
@@ -247,7 +249,7 @@ main{
 
  .greenborder{
     position: absolute;
-    z-index: 999;
+    z-index: 1;
 }
 .me{
     z-index: 999;
@@ -354,12 +356,12 @@ main{
 /* Waves Animation start*/
 .hero_area{
     position: relative;
-    height: 14.7vh;
+    height: 14vh;
 }
 .waves {
     position: absolute;
     width: 100%;
-    min-height: 100px;
+    min-height: 80px;
     max-height: 100px;
     bottom: 0;
     left: 0;
@@ -404,12 +406,12 @@ main{
 
 @media (max-width: 768px) {
     
-    /* .hero_area{
-        height: 6vh !important;
-    } */
+    .hero_area{
+        height: 4vh !important;
+    }
     .waves {
-        height: 70px !important;
-        min-height: 70px !important;
+        height: 40px !important;
+        min-height: 40px !important;
     }
 }
 
@@ -418,13 +420,13 @@ main{
 
 @media screen and (min-width:320px) and (max-width:374px) {
     .hometext{
-        margin-top: 1rem;
+        margin-top: 2rem;
         padding: 0 2%;
-        margin-bottom: 3px;
+        margin-bottom: -1rem;
         text-align: center;
         }
         .text7{
-            font-size: 16px;
+            font-size: 18px;
             }
             .text8{
                 font-size: 25px;
@@ -439,22 +441,17 @@ main{
     .me{
         margin-top: 5px !important;
     }
-
-    .hero_area{
-        height: 7.99999vh !important;
-    }
 }
 
 @media screen and (min-width:375px) and (max-width:390px) {
     .hometext{
-        margin-top: 0rem;
+        margin-top: 1rem;
         padding: 0 2%;
-        margin-bottom: -.8rem;
+        margin-bottom: 1.5rem;
         text-align: center;
         }
         .text7{
-            font-size: 16px;
-            margin-bottom: 2px;
+            font-size: 18px;
             }
             .text8{
                 font-size: 25px;
@@ -472,14 +469,11 @@ main{
        .me{
         margin-top: 4px !important;
     }
-    .hero_area{
-        height: 5vh !important;
-    }
 }
 
 @media screen and (min-width:391px) and (max-width:424px) {
     .hometext{
-        margin-top: 3rem;
+        margin-top: 2rem;
         padding: 0 2%;
         margin-bottom: -5rem;
         text-align: center;
@@ -497,28 +491,26 @@ main{
             .text10{
             font-size: 20px;
             }
+   
+    
        .homeimg{
-        margin-top: 6.8rem !important;
-        margin-bottom: 1rem;
+        margin-top: 5.8rem !important;
+        margin-bottom: 4rem !important;
        }
        .me{
         margin-top: 4px !important;
     }
-    .hero_area{
-        height: 15vh !important;
-    }
-    
 }
 
 
 @media screen and (min-width:425px) and (max-width:767px) {
     .hometext{
-        margin-top: 3px;
+        margin-top: 0rem;
         margin-bottom: 0rem;
         text-align: center;
         }
         .text7{
-            font-size: 16px;
+            font-size: 18px;
             margin-bottom: -0rem;
             }
             .text8{
@@ -534,29 +526,20 @@ main{
             margin-bottom: 11px !important;
             }
         .homeimg{
-            margin-top: -.3rem !important;
-            width: 94%;
-            left: 14px;
+            margin-top: -1rem;
            }
            .me{
             margin-top: 4px !important;
-        }
-        .btn11{
-            font-size: 14px;
-        }
-        .hero_area{
-            height: 2.4vh !important;
         }
 }
 
 
 @media screen and (min-width:768px) and (max-width:1023px) {
     .hometext{
-        margin-top: 8.8rem;
+        margin-top: 8rem;
         }
         .text7{
-            font-size: 18px;
-            margin-bottom: 0px !important;
+            font-size: 23px;
             }
             .text8{
                 font-size: 30px;
@@ -572,24 +555,20 @@ main{
             }
         .homeimg{
             margin-top: 1rem !important;
-            margin-bottom: 2.558rem;
+            margin-bottom: 2.8rem;
         }
         .me{
             margin-top: 4px !important;
-        }
-        .btn11{
-            font-size: 14px !important;
         }
 }
 
 
 @media screen and (min-width:1024px) and (max-width:1240px) {
     .hometext{
-        margin-top: 13rem;
+        margin-top: 12rem;
         }
         .text7{
-            font-size: 20px;
-            margin-bottom: 0px;
+            font-size: 25px;
             }
             .text8{
                 font-size: 35px;
@@ -609,9 +588,6 @@ main{
         }
         .me{
             margin-top: 4px !important;
-        }
-        .btn11{
-            margin-top: 3px !important;
         }
 }
 
@@ -639,9 +615,4 @@ main{
             margin-top: 3rem !important;
             margin-bottom: 2rem;
         }
-        .btn11{
-            font-size: 20px;
-            margin-top: 6px;
-        }
 }
-
