@@ -188,7 +188,8 @@ main{
     
     .text7{
     font-size: 21px;
-    font-weight: 700;
+    font-weight: 500;
+    color: #f6f6f6e0;
     }
     .text8{
         font-size: 45px;
@@ -496,18 +497,14 @@ main{
             .text10{
             font-size: 20px;
             }
-   
-    
        .homeimg{
-        margin-top: 6.8rem !important;
-        margin-bottom: 4rem;
+        margin-top: 4.8rem !important;
+        margin-bottom: 2rem;
        }
        .me{
         margin-top: 4px !important;
     }
-    .hero_area{
-        height: 2vh !important;
-    }
+    
 }
 
 
@@ -610,6 +607,9 @@ main{
         .me{
             margin-top: 4px !important;
         }
+        .btn11{
+            margin-top: 3px !important;
+        }
 }
 
 
@@ -636,5 +636,8 @@ main{
             margin-top: 3rem !important;
             margin-bottom: 2rem;
         }
+        .btn11{
+            font-size: 20px;
+            margin-top: 6px;
+        }
 }
-
