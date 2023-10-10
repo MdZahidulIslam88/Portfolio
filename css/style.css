@@ -1,7 +1,7 @@
 
 
   /* desktop view start */
-header{
+  header{
     width: 230px;
     height: 100vh;
     background-color: bisque;
@@ -179,7 +179,6 @@ main{
     height: auto;
     margin-left: 240px;
     background-color: #070D1B;
-    
  }
  
  .hometext{
@@ -188,7 +187,7 @@ main{
     }
     
     .text7{
-    font-size: 37px;
+    font-size: 21px;
     font-weight: 700;
     }
     .text8{
@@ -199,14 +198,44 @@ main{
     font-size: 30px;
     color: #FFFF;
     font-weight: 500;
-
     }
     .text10{
     font-size: 30px;
     color: #FF714A;
     letter-spacing: 3px;
-    border-bottom: 2px solid #FF714A;
-
+    }
+    .btn11{
+        margin-top: -.7rem;
+        z-index: 5;
+        position: relative;
+        background: none;
+        border: 2px solid #FF714A;
+        transform: color 0.6s linear;
+    }
+    .btn11:hover{
+        border: 2px solid #FF714A;
+    }
+    .btn11::before{
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: #FF714A;
+        transition: 0.5s;
+        transform-origin: 0 0;
+        transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
+        transform: scaleX(0);
+        z-index: -1;
+    }
+    .btn11 a{
+        color: #FFFF;
+        text-decoration: none;
+        z-index: 1;
+    }
+    .btn11:hover::before{
+        transform: scaleX(1);
     }
    
  .homeimg{
@@ -324,7 +353,7 @@ main{
 /* Waves Animation start*/
 .hero_area{
     position: relative;
-    height: 14vh;
+    height: 14.7vh;
 }
 .waves {
     position: absolute;
@@ -388,13 +417,13 @@ main{
 
 @media screen and (min-width:320px) and (max-width:374px) {
     .hometext{
-        margin-top: 2rem;
+        margin-top: 1rem;
         padding: 0 2%;
-        margin-bottom: -1rem;
+        margin-bottom: 3px;
         text-align: center;
         }
         .text7{
-            font-size: 18px;
+            font-size: 16px;
             }
             .text8{
                 font-size: 25px;
@@ -409,17 +438,22 @@ main{
     .me{
         margin-top: 5px !important;
     }
+
+    .hero_area{
+        height: 7.99999vh !important;
+    }
 }
 
 @media screen and (min-width:375px) and (max-width:390px) {
     .hometext{
-        margin-top: 1rem;
+        margin-top: 0rem;
         padding: 0 2%;
-        margin-bottom: 1.5rem;
+        margin-bottom: -.8rem;
         text-align: center;
         }
         .text7{
-            font-size: 18px;
+            font-size: 16px;
+            margin-bottom: 2px;
             }
             .text8{
                 font-size: 25px;
@@ -436,6 +470,9 @@ main{
        }
        .me{
         margin-top: 4px !important;
+    }
+    .hero_area{
+        height: 5vh !important;
     }
 }
 
@@ -462,11 +499,14 @@ main{
    
     
        .homeimg{
-        margin-top: 5.8rem;
+        margin-top: 5.8rem !important;
         margin-bottom: 4rem;
        }
        .me{
         margin-top: 4px !important;
+    }
+    .hero_area{
+        height: 2vh !important;
     }
 }
 
@@ -584,3 +624,4 @@ main{
             margin-bottom: 2rem;
         }
 }
+
