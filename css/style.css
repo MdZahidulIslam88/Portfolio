@@ -247,7 +247,7 @@ main{
 
  .greenborder{
     position: absolute;
-    z-index: 1;
+    z-index: 999;
 }
 .me{
     z-index: 999;
@@ -359,7 +359,7 @@ main{
 .waves {
     position: absolute;
     width: 100%;
-    min-height: 80px;
+    min-height: 100px;
     max-height: 100px;
     bottom: 0;
     left: 0;
@@ -404,12 +404,12 @@ main{
 
 @media (max-width: 768px) {
     
-    .hero_area{
+    /* .hero_area{
         height: 6vh !important;
-    }
+    } */
     .waves {
-        height: 60px !important;
-        min-height: 60px !important;
+        height: 70px !important;
+        min-height: 70px !important;
     }
 }
 
@@ -498,8 +498,8 @@ main{
             font-size: 20px;
             }
        .homeimg{
-        margin-top: 4.8rem !important;
-        margin-bottom: 2rem;
+        margin-top: 5.8rem !important;
+        margin-bottom: 3rem;
        }
        .me{
         margin-top: 4px !important;
@@ -569,7 +569,7 @@ main{
             }
         .homeimg{
             margin-top: 1rem !important;
-            margin-bottom: 2.8rem;
+            margin-bottom: 2.558rem;
         }
         .me{
             margin-top: 4px !important;
@@ -641,3 +641,4 @@ main{
             margin-top: 6px;
         }
 }
+
