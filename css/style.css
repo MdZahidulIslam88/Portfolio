@@ -1,14 +1,15 @@
-
-
-  /* desktop view start */
-  header{
-    width: 230px;
-    height: 100vh;
-    background-color: bisque;
-    position: relative;
-    min-height: 100%;
-    background-color: #070D1B;
-    padding: 0px !important;
+*{
+    margin: 0;
+    padding: 0 auto !important;
+    box-sizing: border-box;
+}
+header{
+    width: 250px;
+    height: calc(100%);
+     background: #0C0C14;
+     position: relative;
+     padding: 0 !important;
+     z-index: 999;
 }
 @media only screen and (max-width: 1023px){
     header{
@@ -18,103 +19,98 @@
         margin-left: 0 !important;
     }
 }
-
-header .top-img img{
+header .top1 img {
     width: 50%;
-    border: 8px solid #202632;
+    border: 6px solid #ffffff;
     border-radius: 50%;
+    background: rgb(62, 88, 80);
+    
 }
-
+header .top1::after{
+    content: "";
+    width: 300px;
+    height: 300px;
+    background: #2FBF71;
+    position: absolute;
+    z-index: -1;
+    border-radius:  0 0 50% 50%;
+    top: -150px;
+    right: 0;
+}
 header .text1{
-    font-size: 23px;
+    letter-spacing: 1px;
+}
+header .menubar .nav-link{ 
+    color: #FFFF;
+    font-size: 16px;
+    border-bottom: 1px solid #121a2a;
+    letter-spacing: 1.2px;
+    line-height: 35px;
+    
 }
 
-header .icon-bar ul li{
+header .menubar ul li:hover i{
+    color: #2FBF71;
+    transition: .4s ease;
+}
+header .menubar ul li:hover{
+    background-color: #0c1425;
+    transition: .4s ease;
+}
+
+header .social-icons{
+    position: absolute;
+    bottom: 0;
+    padding-left: .6rem !important;
+}
+header .social-icons a{
+    margin-right: 20px;
+    margin-bottom: 10px !important;
     font-size: 16px;
     width: 32px;
     height: 32px;
     line-height: 33px;
     border-radius: 50%;
     background-color: #202632;
-    display: inline-block;
-    color: white;
-    margin-right: 10px;
-    margin-top: 5px;
 }
-header .text2 {
-    position: absolute;
-    bottom: 0;
-    color: #5C6073;
-}
-header .icon-bar ul li:hover{
-    background-color: #FF714A;
-    color: white;
+header .social-icons a:hover{
+    background-color: #2FBF71;
     transition: .8s ease;
 }
-header .icon-bar ul{
-    padding-left: 0rem;
-    
+.navbar{
+    position: sticky;
+    top: 0;
+    z-index: 999 !important;
 }
-.menubar {
-    padding: 0px !important;
-}
-header .menubar a{ 
-    padding-bottom:15px;
-    padding-top: 15px;
-    color: #FFFF;
-    font-size: 17px;
-    padding: auto 60px auto 70px;
-    border-bottom: 1px solid #121a2a;
-    letter-spacing: 1.2px;
-}
-header .menubar ul li a:hover{
-    color: #FF714A;
-    background-color: #0c1425;
-    transition: .4s ease;
-    padding-bottom:15px;
-    padding-top: 15px;
-}
-header .menubar li.active a:after {
-    background-color: #ff714a;
-}
-.fa{
-    margin-right: 10px;
-    margin-left: -25px;
-}
-/* desktop view end */
 
 /* mobile view start */
 
 .bg2{
-    background-color: #070D1B ;
+    background: #0C0C14; ;
 }
 
 .name1{
     color: #FFFF !important;
 }
 .offcanvas-header{
-    background-color: #070D1B;
+    background: #0C0C14;
     border-bottom: 1px solid #121a2a;
 }
 
-.menu2 a{ 
-    padding-bottom:10px;
-    padding-top: 10px;
+
+.menu2 a{
     color: #FFFF;
     font-size: 17px;
-    padding: auto 60px auto 70px;
     border-bottom: 1px solid #121a2a;
 }
 .menu2{
-    background-color: #070D1B;
+    background: #0C0C14;
     padding: 0rem !important;
-    padding: 25px 0  !important;
-    
+    line-height: 40px !important;
+    z-index: 999;
 }
 
-.menu2 ul{
-    padding-right: 0rem !important;
-}
+
 .icon-bar1 ul li{
     font-size: 16px;
     width: 32px;
@@ -124,24 +120,11 @@ header .menubar li.active a:after {
     background-color: #202632;
     display: inline-block;
     color: white;
-    margin-right: 10px;
-
-    
-}
-
-.icon-bar1 ul{
-    padding-left: 0rem;
-    margin-top: 7rem;
-    
+    margin-right: 10px; 
 }
 .icon-bar1 a{
     border-bottom: none;
 }
-.icon-bar1{
-    margin-top: 5rem !important;
-}
-
-
 .icontest{
     background-color: transparent;
     outline: none;
@@ -157,7 +140,6 @@ nav  .text2{
     left: 0;
     bottom: 0;
     color: #5C6073;
-    text-align: center;
 }
 @media screen and (max-width:425px){
     .offcanvas.offcanvas-start{
@@ -170,190 +152,128 @@ nav  .text2{
 }
 
 /* mobile view end */
-
-
-/* Home start */
-
-
 main{
+    width: auto;
     height: auto;
-    margin-left: 240px;
-    background-color: #070D1B;
-    
- }
- .hometext{
-    margin-top: 12rem;
-    padding: 0 5%;
-    }
-    
-    .text7{
-        font-size: 21px;
-        font-weight: 500;
-        color: #f6f6f6e0;
-        }
-        .text8{
-            font-size: 45px;
-            font-weight: 700;
-            }
-        .text9{
-        font-size: 30px;
-        color: #FFFF;
-        font-weight: 500;
-        }
-        .text10{
-        font-size: 30px;
-        color: #FF714A;
-        letter-spacing: 3px;
-        }
-    .btn11{
-        margin-top: -.7rem;
-        z-index: 5;
-        position: relative;
-        background: none;
-        border: 2px solid #FF714A;
-        transform: color 0.6s linear;
-    }
-    .btn11:hover{
-        border: 2px solid #FF714A;
-    }
-    .btn11::before{
-        content: "";
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        background: #FF714A;
-        transition: 0.5s;
-        transform-origin: 0 0;
-        transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
-        transform: scaleX(0);
-        z-index: -1;
-    }
-    .btn11 a{
-        color: #FFFF;
-        text-decoration: none;
-        z-index: 1;
-    }
-    .btn11:hover::before{
-        transform: scaleX(1);
-    }   
- .homeimg{
+    margin-left: 250px;
+    background: #10101A;
+    overflow: hidden;
+}
+.home{
+    min-height: 100vh;
+    padding: 4rem;
+    grid-template-columns: 1fr 2fr;
+}
+.home .home-text1{
+    font-size: 25px;
+    font-weight: 500;
+}
+.home, .home-text3{
+    font-size: 18px;
+    font-weight: 500;
+}
+.home, .home-text5{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+}
+.btn11{
+    z-index: 5;
+    position: relative;
+    background: none;
+    border: 2px solid #2FBF71;
+    transform: color 0.6s linear;
+}
+.btn11:hover{
+    border: 2px solid #2FBF71;
+}
+.btn11::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
     width: 100%;
     height: 100%;
+    background: #2FBF71;
+    transition: 0.5s;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
+    transform: scaleX(0);
+    z-index: -1;
+}
+.btn11 a{
+    color: #FFFF;
+    text-decoration: none;
+    z-index: 1;
+}
+.btn11:hover::before{
+    transform: scaleX(1);
+}  
+
+.btn12{
+    margin-top: -.7rem;
+    z-index: 5;
     position: relative;
+    background: none;
+    border: 2px solid #2FBF71;
+    transform: color 0.6s linear;
+}
+.btn12:hover{
+    border: 2px solid #2FBF71;
+}
+.btn12::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #2FBF71;
+    transition: 0.5s;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
+    transform: scaley(0);
+    z-index: -1;
+}
+.btn12 a{
+    color: #FFFF;
+    text-decoration: none;
+    z-index: 1;
+}
+.btn12:hover::before{
+    transform: scaley(1);
+}
+.home-img::after{
+    content: "";
+    width: 100vh;
+    height: 100vh;
+    border-radius: 50%;
+    position: absolute;
+    right: -22vh;
+    top: -35vh;
+    background: #0B0B13;
+    z-index: 1;
  }
+ 
+.home-img1{
+    position: relative;
+    z-index: 999;
+ }
+
 
  .greenborder{
     position: absolute;
-    z-index: 1;
 }
 .me{
-    z-index: 999;
     position: absolute;
     border-radius: 100%;
-    margin-top: 2px;
+    padding-top: 2px;
 }
-/* 
-.homeimg1{
-    position: fixed;
-}
-.xd{
-    z-index: 999;
-    position: absolute;
-    width: 8%;
-    top: 8rem;
-    right: 29.5rem;
-}
-.wordpress{
-    z-index: 999;
-    position: absolute;
-    width: 8%;
-    top: 8rem;
-    right: 1.3rem;
-}
-.html5{
-    z-index: 999;
-    position: absolute;
-    width: 8%;
-    top: 22rem;
-    right: 30.3rem;
-}
-.php{
-    z-index: 999;
-    position: absolute;
-    width: 8%;
-    top: 22rem;
-    right: .3rem;
-}
-.logo-object-top{
-    animation: logo-object-top 5s linear infinite;
-
-}
-@keyframes logo-object-top{
-    0%{
-        transform: translateX(-5px);
-    }
-    50%{
-        transform: translateX(5px);
-    }
-    100%{
-        transform: translateX(-5px);
-    }
-}
-
-.logo-object-top-2{
-    animation: logo-object-top-2 10s linear infinite;
-  
-}
-@keyframes logo-object-top-2{
-    0%{
-        transform: translateX(-3px);
-    }
-    50%{
-        transform: translateX(3px);
-    }
-    100%{
-        transform: translateX(-3px);
-    }
-}
-
-.logo-object-bottom{
-    animation: logo-object-bottom 10s linear infinite;
-    
-}
-@keyframes logo-object-bottom{
-    0%{
-        transform: translateX(-3px);
-    }
-    50%{
-        transform: translateX(3px);
-    }
-    100%{
-        transform: translateX(-3px);
-    }
-}
-
-.logo-object-bottom-2{
-    animation: logo-object-bottom-2 5s linear infinite;
-    
-}
-@keyframes logo-object-bottom-2{
-    0%{
-        transform: translateX(-3px);
-    }
-    50%{
-        transform: translateX(3px);
-    }
-    100%{
-        transform: translateX(-3px);
-    }
-}  */
 
 /* Waves Animation start*/
 .hero_area{
-    position: relative;
     height: 14vh;
+    margin-bottom: -3.9rem;
 }
 .waves {
     position: absolute;
@@ -401,235 +321,102 @@ main{
 
 /*Shrinking for mobile*/
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     
-    .hero_area{
-        height: 4vh !important;
-    }
     .waves {
-        height: 40px !important;
-        min-height: 40px !important;
+        display: none;
     }
 }
 
 /* Waves Animation end*/
 
-
-@media screen and (min-width:320px) and (max-width:374px) {
-    .hometext{
-        margin-top: 1rem;
-        padding: 0 2%;
-        margin-bottom: 3px;
-        text-align: center;
-        }
-        .text7{
-            font-size: 16px;
-            }
-            .text8{
-                font-size: 25px;
-                margin-bottom: -.0rem;
-                }
-            .text9{
-            font-size: 20px;
-            }
-            .text10{
-            font-size: 20px;
-            }
-    .me{
-        margin-top: 5px !important;
+@media (width < 767px){
+    .home{
+        padding: 0;
+        flex-direction: column-reverse;
     }
-}
-
-@media screen and (min-width:375px) and (max-width:390px) {
-    .hometext{
-        margin-top: 0rem;
-        padding: 0 2%;
-        margin-bottom: -.8rem;
-        text-align: center;
-        }
-        .text7{
-            font-size: 16px;
-            margin-bottom: 2px;
-            }
-            .text8{
-                font-size: 25px;
-                margin-bottom: -.0rem;
-                }
-            .text9{
-            font-size: 20px;
-            }
-            .text10{
-            font-size: 20px;
-            }
-       .homeimg{
-        margin-top: -.6rem;
-       }
-       .me{
-        margin-top: 4px !important;
+    .hometext.mt-5.pt-5 {
+        margin-top: 1rem !important;
+        text-align: center; 
+        position: relative;
+        z-index: 8;
     }
-}
+    .home_btn{
+        margin: auto;
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+    }
+    button.btn.btn11,.btn12{
+        font-size: 14px;
+    }
+    .home-img1{
+        z-index: 0 !important;
+    }
+    .home-img::after{
+        right: -42vh;
+        top: 70vh;
+     }
+ }
 
-@media screen and (min-width:391px) and (max-width:424px) {
+ @media only screen and (min-width:768px) and (max-width:1023px) {
+    .home{
+        padding: 0px !important;
+        margin-bottom: -3.5rem !important;
+    }
     .hometext{
+        margin-top: 3rem !important;
+        position: relative;
+        font-size:  40px !important;
+        z-index: 8;
+    }
+    .home-text2{
+        font-size: 35px;
+    }
+    .home-text1{
+        font-size: 20px !important;
+        margin-bottom: -1rem;
+    }
+    .home-text5{
+        line-height: 28px;
+    }
+    .home-img1{
         margin-top: 3rem;
-        padding: 0 2%;
-        margin-bottom: -5rem;
-        text-align: center;
-        }
-        .text7{
-            font-size: 18px;
-            }
-            .text8{
-                font-size: 25px;
-                margin-bottom: -.0rem;
-                }
-            .text9{
-            font-size: 20px;
-            }
-            .text10{
-            font-size: 20px;
-            }
-   
-    
-       .homeimg{
+     }
+     button.btn.btn11,.btn12{
+        font-size: 14px;
+    }
+ }
+
+ @media only screen and (min-width:1024px) and (max-width:1240px) {
+    .home{
+        padding: 0;
+        margin: 1rem;
+    }
+    .hometext.mt-5.pt-5 {
+        margin-top: 3rem !important;
+        position: relative;
+        z-index: 999;
+    }
+    .home_btn{
+        gap: 2rem;
+    }.home-img1{
+        margin-top: 3rem;
+    }
+    .home-img::after{
+     right: -42vh;
+    top: -55vh;
+     }
+ }
+
+ @media only screen and (min-width:1390px) and (max-width:1440px) {
+    .hometext.mt-5.pt-5 {
         margin-top: 5rem !important;
-        margin-bottom: 3rem !important;
-       }
-       .me{
-        margin-top: 4px !important;
+        position: relative;
+        z-index: 999;
     }
-    .hero_area{
-        margin-top: 10px !important;
-    }
-    .waves{
-    margin-top: 10px !important;
-    }
-}
-
-
-@media screen and (min-width:425px) and (max-width:767px) {
-    .hometext{
-        margin-top: 3px;
-        margin-bottom: 0rem;
-        text-align: center;
-        }
-        .text7{
-            font-size: 16px;
-            margin-bottom: -0rem;
-            }
-            .text8{
-                font-size: 23px;
-                margin-bottom: -.0rem;
-                }
-            .text9{
-            font-size: 18px;
-            margin-bottom: 11px !important;
-            }
-            .text10{
-            font-size: 18px;
-            margin-bottom: 11px !important;
-            }
-        .homeimg{
-            margin-top: -.3rem !important;
-            width: 90%;
-            left: 20px;
-           }
-           .me{
-            margin-top: 4px !important;
-        }
-        .btn11{
-            font-size: 14px;
-        }
-}
-
-
-@media screen and (min-width:768px) and (max-width:1023px) {
-    .hometext{
-        margin-top: 8.8rem;
-        }
-        .text7{
-            font-size: 18px;
-            margin-bottom: 0px !important;
-            }
-            .text8{
-                font-size: 30px;
-                margin-bottom: -.0rem;
-                }
-            .text9{
-            font-size: 23px;
-            margin-bottom: 11px !important;
-            }
-            .text10{
-            font-size: 23px;
-            margin-bottom: 11px !important;
-            }
-        .homeimg{
-            margin-top: 1rem !important;
-            margin-bottom: 2.8rem;
-        }
-        .me{
-            margin-top: 4px !important;
-        }
-        .btn11{
-            font-size: 14px !important;
-        }
-}
-
-
-@media screen and (min-width:1024px) and (max-width:1240px) {
-    .hometext{
-        margin-top: 13rem;
-        }
-        .text7{
-            font-size: 20px;
-            margin-bottom: 0px;
-            }
-            .text8{
-                font-size: 35px;
-                margin-bottom: -.0rem;
-                }
-            .text9{
-            font-size: 25px;
-            margin-bottom: 11px !important;
-            }
-            .text10{
-            font-size: 25px;
-            margin-bottom: 11px !important;
-            }
-        .homeimg{
-            margin-top: 5rem !important;
-            margin-bottom: 5.8rem;
-        }
-        .me{
-            margin-top: 4px !important;
-        }
-        .btn11{
-            margin-top: 3px !important;
-        }
-}
-
-
-@media screen and (min-width:1440px) and (max-width:2560px) {
-    .text7{
-        font-size: 35px;
-        }
-        .text8{
-            font-size: 45px;
-            margin-bottom: -.0rem;
-            }
-        .text9{
-        font-size: 35px;
-        margin-bottom: 11px !important;
-        }
-        .text10{
-        font-size: 45px;
-        margin-bottom: 11px !important;
-        }
-    .hometext{
-        margin-top: 15rem !important;
-    }
-        .homeimg{
-            margin-top: 3rem !important;
-            margin-bottom: 2rem;
-        }
-}
+    .home-img::after{
+     right: -42vh;
+    top: -55vh;
+     }
+ }
