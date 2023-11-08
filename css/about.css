@@ -37,11 +37,11 @@
     z-index: 5;
     position: relative;
     background: none;
-    border: 2px solid #FF714A;
+    border: 2px solid #2FBF71;
     transform: color 0.6s linear;
 }
 .btn1:hover{
-    border: 2px solid #FF714A;
+    border: 2px solid #2FBF71;
 }
 .btn1::before{
     content: "";
@@ -50,7 +50,7 @@
     top: 0;
     width: 100%;
     height: 100%;
-    background: #FF714A;
+    background: #2FBF71;
     transition: 0.5s;
     transform-origin: 0 0;
     transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
@@ -78,7 +78,7 @@
     margin-left: 6rem;
 }
 span{
-    color: #FF714A;
+    color: #2FBF71;
 }
 .skills1::before{
     content: '';
@@ -98,10 +98,9 @@ span{
     left:56%;
     transform: translateX(-50%);
     margin-top: 3rem;
-    
-    background-color: #FF714A;
+    background-color: #2FBF71;
 
-}
+} 
 .text22{
     position: relative;
     font-size: 80px;
@@ -114,6 +113,11 @@ span{
     width: 100%;
     text-transform: uppercase;
 
+}
+@media  (width < 768px) {
+    .text22{
+        display: none !important;
+    }
 }
 .fm{
     font-size: 50px;
@@ -139,21 +143,21 @@ span{
 
 
 .card1:hover .card-title {
-    color: #FF714A;
+    color: #2FBF71;
     transition: .7s ease;
   }
   .card2:hover .card-title{
-    color: #FF714A;
+    color: #2FBF71;
     transition: .7s ease;
   }
   .card1:hover  .fm {
-    color: #FF714A;
-    border: 1px solid  #FF714A;
+    color: #2FBF71;
+    border: 1px solid  #2FBF71;
     transition: .7s ease;
   }
   .card2:hover  .fm{
-    color: #FF714A;
-    border: 1px solid  #FF714A;
+    color: #2FBF71;
+    border: 1px solid  #2FBF71;
     transition: .7s ease;
   }
   .card-text{
@@ -171,7 +175,6 @@ span{
    .about1{
     margin-top: 10px !important;
    }
-   
     .card1, .card2{
         margin-left: 8px;
         width: 95%;
@@ -183,21 +186,19 @@ span{
         margin-left: 0rem !important;
     }
     .skills1::before{
-        content: '';
         width:170px;
         height: 2px;
         left:23%;
     
     }
     .skills1::after{
-        content: '';
         width:70px;
         height: 2px;
         left:50%;
     
     }
 }
-@media screen and (min-width:375px) and (max-width:424px) {
+@media screen and (min-width:375px) and (max-width:412px) {
     .about1{
         margin-top: 10px !important;
        }
@@ -209,14 +210,36 @@ span{
         margin-left: 0rem !important;
     }
     .skills1::before{
-        content: '';
+        width:170px;
+        height: 2px;
+        left:30%;
+    
+    }
+    .skills1::after{
+        position: absolute;
+        width:70px;
+        height: 2px;
+        left:50%;
+    }
+}
+@media screen and (min-width:413px) and (max-width:424px) {
+    .about1{
+        margin-top: 10px !important;
+       }
+    .card1, .card2{
+        margin-left: 20px;
+        width: 90%;
+    }
+    .skills1{
+        margin-left: 0rem !important;
+    }
+    .skills1::before{
         width:170px;
         height: 2px;
         left:27%;
     
     }
     .skills1::after{
-        content: '';
         position: absolute;
         width:70px;
         height: 2px;
@@ -235,14 +258,12 @@ span{
         margin-left: 0rem !important;
     }
     .skills1::before{
-        content: '';
         width:170px;
         height: 2px;
         left:30%;
     
     }
     .skills1::after{
-        content: '';
         width:70px;
         height: 2px;
         left:50%;
@@ -266,51 +287,50 @@ span{
     }
     
     .skills1::before{
-        content: '';
         width:170px;
         height: 2px;
         left:33%;
     
     }
     .skills1::after{
-        content: '';
         width:70px;
         height: 2px;
         left:50%;
+    }
+    .text22{
+        font-size: 67px;
+        padding-top: .5rem;
+        margin-left: 2rem;
     }
 }
 
 @media screen and (min-width:1024px) and (max-width:1240px) {
     .card1{
-        
         width: 47%;
     }
     .card2{
         width: 47%;
     }
     .skills0{
-        position: relative;
-        left: 1rem;
+        left: 1.8rem;
     }
     
     .skills1::before{
-        content: '';
         width:177px;
         height: 2px;
         left:42%;
     
     }
     .skills1::after{
-        content: '';
         width:60px;
         height: 2px;
         left:59%;
     
     }
     .text22{
-        font-size: 60px;
+        font-size: 68px;
         margin-top: -3.3rem;
-        margin-left: 2.8rem;
+        margin-left: 2.2rem;
         width: 100%;
     
     }
@@ -318,41 +338,27 @@ span{
 
 
 @media screen and (min-width:1440px) and (max-width:2560px){
-.skills1{
-       font-size: 40px;
-       margin-left: 13rem;
-    }
-    
-    .skills1::before{
-        content: '';
-        position: absolute;
-        width:220px;
-        height: 2px;
-        left:49%;
-        margin-top: 3rem;
-        background-color: #3f4551;
-    
-    }
-    .skills1::after{
-        content: '';
-        position: absolute;
-        width:80px;
-        height: 2px;
-        left:62%;
-        transform: translateX(-50%);
-        margin-top: 3rem;
+    .skills1{
+           font-size: 55px;
+           margin-left: 13rem;
+        }
         
-        background-color: #FF714A;
-    
+        .skills1::before{
+            width:295px;
+            height: 2px;
+            left:44.50%;
+            margin-top: 4.5rem;
+        }
+        .skills1::after{
+            width:100px;
+            height: 2px;
+            left:62%;
+            margin-top: 4.5rem;
+        }
+        .text22{
+            font-size: 100px;
+            margin-top: -5.8rem;
+            margin-left: 2rem;
+        
+        }
     }
-    .text22{
-        position: relative;
-        font-size: 80px;
-        margin-top: -4rem;
-        margin-left: 8rem;
-        top: 0;
-        width: 100% !important;
-        text-transform: uppercase;
-    
-    }
-}
