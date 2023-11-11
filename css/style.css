@@ -82,7 +82,7 @@ header .social-icons a:hover{
     top: 0;
     z-index: 999 !important;
 }
-
+/*---------------------------------------------------*/
 /* mobile view start */
 
 .bg2{
@@ -152,6 +152,8 @@ nav  .text2{
 }
 
 /* mobile view end */
+/* --------------------------------------------- */
+/* home pc view end   */
 main{
     width: auto;
     height: auto;
@@ -163,6 +165,12 @@ main{
     min-height: 100vh;
     padding: 4rem;
     grid-template-columns: 1fr 2fr;
+}
+@media (width < 767px) {
+    
+    .home {
+        display: none;
+    }
 }
 .home .home-text1{
     font-size: 1.563rem;
@@ -273,6 +281,27 @@ main{
     border-radius: 100%;
     padding-top: 2px;
 }
+/* home pc view end   */
+/*------------------------------------------*/
+
+
+/*------------------------------------------*/
+/*home mobile view  start */
+.home-mobile{
+    min-height:90vh;
+      background:linear-gradient(0deg, rgba(0, 0, 0, 0.613), rgba(0, 0, 0, 0.595)),url(../image/me.jpg);
+      background-size:cover;
+      background-repeat: no-repeat;
+      background-position: fixed;
+}
+@media (width > 767px) {
+    .home-mobile{
+        display: none !important;
+    }
+}
+/*home mobile view end*/
+/*------------------------------------------*/
+
 
 /* Waves Animation start*/
 .hero_area{
@@ -332,13 +361,13 @@ main{
     }
 }
 
+
 /* Waves Animation end*/
 
 @media (width < 767px){
     .home{
         padding: 0;
         flex-direction: column-reverse;
-        margin-top: -3.5rem !important;
     }
     .hometext{
         margin-top: -2rem !important;
@@ -350,20 +379,17 @@ main{
         font-size: 35px;
         margin-top: -5px !important;
     }
-    .home-text5{
-        display: none;
-    }
     .home_btn{
         display: none;
-        /* margin: auto;
+        margin: auto;
         display: flex;
         gap: 1rem;
         justify-content: center;
-        margin-top: -2rem !important; */
+        margin-top: -2rem !important;
     }
-    /* button.btn.btn11,.btn12{
+    button.btn.btn11,.btn12{
         font-size: 14px;
-    } */
+    }
     .home-img1{
         z-index: 9 !important;
     }
