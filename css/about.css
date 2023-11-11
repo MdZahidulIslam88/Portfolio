@@ -75,7 +75,6 @@
 .skills1{
     color: #FFFF;
     font-size: 32px;
-    margin-left: 6rem;
 }
 span{
     color: #2FBF71;
@@ -85,8 +84,9 @@ span{
     position: absolute;
     width:170px;
     height: 2px;
-    left:45%;
+    left:50%;
     margin-top: 3rem;
+    transform: translateX(-50%);
     background-color: #3f4551;
 
 }
@@ -95,7 +95,7 @@ span{
     position: absolute;
     width:70px;
     height: 2px;
-    left:56%;
+    left:50%;
     transform: translateX(-50%);
     margin-top: 3rem;
     background-color: #2FBF71;
@@ -179,24 +179,6 @@ span{
         margin-left: 8px;
         width: 95%;
     }
-    .skills0{
-        margin-left: 0rem !important;
-    }
-    .skills1{
-        margin-left: 0rem !important;
-    }
-    .skills1::before{
-        width:170px;
-        height: 2px;
-        left:23%;
-    
-    }
-    .skills1::after{
-        width:70px;
-        height: 2px;
-        left:50%;
-    
-    }
 }
 @media screen and (min-width:375px) and (max-width:412px) {
     .about1{
@@ -205,21 +187,6 @@ span{
     .card1, .card2{
         margin-left: 20px;
         width: 90%;
-    }
-    .skills1{
-        margin-left: 0rem !important;
-    }
-    .skills1::before{
-        width:170px;
-        height: 2px;
-        left:30%;
-    
-    }
-    .skills1::after{
-        position: absolute;
-        width:70px;
-        height: 2px;
-        left:50%;
     }
 }
 @media screen and (min-width:413px) and (max-width:424px) {
@@ -230,21 +197,6 @@ span{
         margin-left: 20px;
         width: 90%;
     }
-    .skills1{
-        margin-left: 0rem !important;
-    }
-    .skills1::before{
-        width:170px;
-        height: 2px;
-        left:27%;
-    
-    }
-    .skills1::after{
-        position: absolute;
-        width:70px;
-        height: 2px;
-        left:50%;
-    }
 }
 @media screen and (min-width:425px) and (max-width:767px) {
     .about1{
@@ -254,21 +206,6 @@ span{
         margin-left: 3rem;
         width: 80%;
     }
-    .skills1{
-        margin-left: 0rem !important;
-    }
-    .skills1::before{
-        width:170px;
-        height: 2px;
-        left:30%;
-    
-    }
-    .skills1::after{
-        width:70px;
-        height: 2px;
-        left:50%;
-    
-    }
 }
 @media screen and (min-width:768px) and (max-width:1023px) {
     .about1{
@@ -277,25 +214,6 @@ span{
     .card1, .card2{
         margin-left: 2.5rem;
         width: 90%;
-    }
-    .skills0{
-        position: relative;
-        left: 5rem;
-    }
-    .skills1{
-        margin-left: 0rem !important;
-    }
-    
-    .skills1::before{
-        width:170px;
-        height: 2px;
-        left:33%;
-    
-    }
-    .skills1::after{
-        width:70px;
-        height: 2px;
-        left:50%;
     }
     .text22{
         font-size: 67px;
@@ -311,22 +229,7 @@ span{
     .card2{
         width: 47%;
     }
-    .skills0{
-        left: 1.8rem;
-    }
     
-    .skills1::before{
-        width:177px;
-        height: 2px;
-        left:42%;
-    
-    }
-    .skills1::after{
-        width:60px;
-        height: 2px;
-        left:59%;
-    
-    }
     .text22{
         font-size: 68px;
         margin-top: -3.3rem;
@@ -340,19 +243,11 @@ span{
 @media screen and (min-width:1440px) and (max-width:2560px){
     .skills1{
            font-size: 55px;
-           margin-left: 13rem;
         }
-        
         .skills1::before{
-            width:295px;
-            height: 2px;
-            left:44.50%;
             margin-top: 4.5rem;
         }
         .skills1::after{
-            width:100px;
-            height: 2px;
-            left:62%;
             margin-top: 4.5rem;
         }
         .text22{
