@@ -15,7 +15,6 @@
     margin-top: 5rem;
     color: #FFFF;
     font-size: 32px;
-    margin-left: 6rem !important;
 }
 span{
     color: #2FBF71;
@@ -25,7 +24,8 @@ span{
     position: absolute;
     width:167px;
     height: 2px;
-    left:45.50%;
+    left:50%;
+    transform: translateX(-50%);
     margin-top: 3rem;
     background-color: #3f4551;
 
@@ -35,7 +35,7 @@ span{
     position: absolute;
     width:70px;
     height: 2px;
-    left:56%;
+    left:50%;
     transform: translateX(-50%);
     margin-top: 3rem;
     
@@ -49,7 +49,6 @@ span{
     color: rgba(81, 91, 117, 0.072);
     margin: 0;
     margin-top: -4rem;
-    margin-left: 2rem;
     top: 0;
     width: 100%;
     text-transform: uppercase;
@@ -158,20 +157,6 @@ button.btn.btn1:hover::before{
             font-size: 32px;
             margin-top: 0rem;
         }
-        .skills1::before{
-            content: '';
-            width:170px;
-            height: 2px;
-            left:24%;
-        
-        }
-        .skills1::after{
-            content: '';
-            width:70px;
-            height: 2px;
-            left:50%;
-        
-        }
         .info1{
             margin-left: 0px !important;
         }
@@ -196,20 +181,6 @@ button.btn.btn1:hover::before{
         .skills1{
             font-size: 32px;
             margin-top: 0rem;
-        }
-        .skills1::before{
-            content: '';
-            width:170px;
-            height: 2px;
-            left:27%;
-        
-        }
-        .skills1::after{
-            content: '';
-            width:70px;
-            height: 2px;
-            left:50%;
-        
         }
         .info1{
             margin-left: 0px !important;
@@ -236,19 +207,6 @@ button.btn.btn1:hover::before{
             font-size: 32px;
             margin-top: 0rem;
         }
-        .skills1::before{
-            content: '';
-            width:170px;
-            height: 2px;
-            left:30%;
-        
-        }
-        .skills1::after{
-            content: '';
-            width:70px;
-            height: 2px;
-            left:50%;
-        }
         .info1{
             margin-left: 0px !important;
         }
@@ -265,31 +223,12 @@ button.btn.btn1:hover::before{
             width: 250px;
         }
         .skills1{
-            margin-left: 8rem !important;
-        }
-        .skills1{
             font-size: 34px;
             margin-top: 0rem;
-        }
-        .skills1::before{
-            content: '';
-            width:170px;
-            height: 2px;
-            left:46%;
-        
-        }
-        .skills1::after{
-            content: '';
-            width:70px;
-            height: 2px;
-            left:63%;
-        
         }
         .text22{
             font-size: 64px;
             margin-top: -3.5rem;
-            margin-left: 4rem;
-        
         }
       
       
@@ -305,34 +244,14 @@ button.btn.btn1:hover::before{
             width: 260px;
         }
         .skills1{
-            margin-left: 8rem !important;
-        }
-        .skills1{
             font-size: 34px;
             margin-top: 3rem;
         }
-        .skills1::before{
-            content: '';
-            width:170px;
-            height: 2px;
-            left:46%;
         
-        }
-        .skills1::after{
-            content: '';
-            width:70px;
-            height: 2px;
-            left:63%;
-        
-        }
         .text22{
             font-size: 64px;
             margin-top: -3.5rem;
-            margin-left: 4rem;
-        
         }
-      
-      
     }
 
 
@@ -346,32 +265,17 @@ button.btn.btn1:hover::before{
         .skills1{
             margin-top: 5rem !important;
             font-size: 45px;
-            margin-left: 13rem !important;
         }
         .skills1::before{
-            content: '';
-            width:230px;
-            height: 2px;
-            left:49%;
-            margin-top: 3.6rem;
-        
+            margin-top: 3.8rem;
         }
         .skills1::after{
-            content: '';
-            width:70px;
-            height: 2px;
-            left:64%;
-            margin-top: 3.6rem;
-        
+            margin-top: 3.8rem;
         }
         .text22{
             font-size: 95px;
             margin-top: -4.7rem;
-            margin-left: 5.9rem;
-        
         }
-      
-      
     }
 
     
