@@ -288,7 +288,7 @@ main{
 /*------------------------------------------*/
 /*home mobile view  start */
 .home-mobile{
-    min-height: 31.78rem;
+    min-height: 90vh;
       background:linear-gradient(0deg, rgba(0, 0, 0, 0.651), rgba(0, 0, 0, 0.661)),url(../image/me.jpg);
       background-size:cover;
       background-repeat: no-repeat;
@@ -299,9 +299,9 @@ main{
         display: none !important;
     }
 }
-@media only screen and  (min-width:376px) and (max-width:418px) {
+@media only screen and  (min-width:378px) and (max-width:395px) {
     .home-mobile{
-        height:43.6rem !important; 
+        height:92.5vh !important; 
     }
 }
 /*home mobile view end*/
