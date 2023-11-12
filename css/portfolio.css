@@ -5,7 +5,6 @@
 }
 .skills0{
   position: relative;
-  margin-left: 8rem;
  
 }
 .skills1{
@@ -24,7 +23,8 @@ span{
   position: absolute;
   width:115px;
   height: 2px;
-  left:42%;
+  left:50%;
+  transform: translateX(-50%);
   margin-top: 3rem;
   background-color: #3f4551;
 
@@ -48,7 +48,6 @@ span{
   color: rgba(81, 91, 117, 0.072);
   margin: 0;
   margin-top: -6.5rem;
-  margin-left: 4rem;
   top: 0;
   width: 100%;
   text-transform: uppercase;
@@ -90,23 +89,7 @@ span{
     margin-bottom: 1rem !important;
     
 }
-.skills0{
-    margin-left:-0rem;
-}
-.skills1::before{
-    content: '';
-    width:124px;
-    height: 2px;
-    left:31%;
 
-}
-.skills1::after{
-    content: '';
-    width:40px;
-    height: 2px;
-    left:50%;
-
-}
 .row1{
   padding-left: .8rem;
   padding-right: .8rem;
@@ -128,23 +111,6 @@ span{
     margin-bottom: 1rem !important;
     
 }
-.skills0{
-    margin-left:-0rem;
-}
-.skills1::before{
-    content: '';
-    width:124px;
-    height: 2px;
-    left:33.50%;
-
-}
-.skills1::after{
-    content: '';
-    width:40px;
-    height: 2px;
-    left:50%;
-
-}
 .row1{
   padding-left: .8rem;
   padding-right: .8rem;
@@ -162,26 +128,9 @@ span{
  @media screen and (min-width:425px) and (max-width:767px) {
   .skills1{
     margin-top: 0rem !important;
-    margin-bottom: 1rem !important;
-    
+    margin-bottom: 1rem !important; 
 }
-.skills0{
-    margin-left:-0rem;
-}
-.skills1::before{
-    content: '';
-    width:124px;
-    height: 2px;
-    left:35.50%;
 
-}
-.skills1::after{
-    content: '';
-    width:40px;
-    height: 2px;
-    left:50%;
-
-}
 .row1{
   padding-left: .8rem;
   padding-right: .8rem;
@@ -203,13 +152,6 @@ span{
     margin-bottom: -0.7rem !important;
     
 }
-.skills1::before{
-    content: '';
-    width:122px;
-    height: 2px;
-    left:38%;
-
-}
 .row1{
   padding-left: .8rem;
   padding-right: .8rem;
@@ -225,8 +167,6 @@ span{
 .text23{
   font-size: 70px;
   margin-top: -2.5rem;
-  margin-left: 4rem;
-
 }
  
 }
@@ -237,13 +177,6 @@ span{
       margin-top: 4rem !important;
       margin-bottom: -0.7rem !important;
       
-  }
-  .skills1::before{
-      content: '';
-      width:122px;
-      height: 2px;
-      left:38%;
-  
   }
   .row1{
     padding-left: .8rem ;
@@ -260,8 +193,6 @@ span{
   .text23{
     font-size: 70px;
     margin-top: -2.5rem;
-    margin-left: 4rem;
-  
   }
    
   }
@@ -272,30 +203,19 @@ span{
     .skills1{
       font-size: 50px;
       margin-top: 3rem !important;
-      margin-left: 8rem;
       margin-bottom: -0.7rem !important;
       
   }
   .skills1::before{
-      content: '';
-      width:193px;
-      height: 2px;
       margin-top: 3.5rem !important;
-      left:46%;
   }
   .skills1::after{
-      content: '';
-      width:70px;
-      height: 2px;
       margin-top: 3.5rem !important;
-      left:58%;
     
     }
     .text23{
       font-size: 100px !important;
       margin-top: -3.9rem !important;
-      margin-left: 6rem !important;
-
     }
     .row1{
       padding-left: 1.5rem ;
