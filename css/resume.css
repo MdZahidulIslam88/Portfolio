@@ -9,15 +9,12 @@
 }
 .skills0{
     position: relative;
-    margin-left: 8rem;
-   
 }
+
 .skills1{
     color: #FFFF;
     font-size: 32px;
-    margin-top: 3rem !important;
- 
-    
+    margin-top: 3rem !important; 
 }
 span{
     color: #2FBF71;
@@ -27,8 +24,9 @@ span{
     position: absolute;
     width:115px;
     height: 2px;
-    left:42%;
+    left:50%;
     margin-top: 3rem;
+    transform: translateX(-50%);
     background-color: #3f4551;
 
 }
@@ -40,7 +38,6 @@ span{
     left:50%;
     transform: translateX(-50%);
     margin-top: 3rem;
-    
     background-color: #2FBF71;
 
 }
@@ -51,11 +48,15 @@ span{
     color: rgba(81, 91, 117, 0.072);
     margin: 0;
     margin-top: -6.5rem;
-    margin-left: 6.9rem;
     top: 0;
     width: 100%;
     text-transform: uppercase;
 
+}
+@media (width < 767px) {
+    .text23{
+        display: none;
+    }
 }
 .fn{
     display: inline;
@@ -162,7 +163,6 @@ span{
 
 .skills2{
     position: relative;
-    margin-left: 11rem !important;
 }
 
 .skills3{
@@ -175,7 +175,8 @@ span{
     position: absolute;
     width:115px;
     height: 2px;
-    left:42%;
+    left:50%;
+    transform: translateX(-50%);
     margin-top: 3rem;
     background-color: #3f4551;
 
@@ -188,7 +189,6 @@ span{
     left:50%;
     transform: translateX(-50%);
     margin-top: 3rem;
-    
     background-color: #2FBF71;
 
 }
@@ -204,6 +204,23 @@ span{
     width: 100%;
     text-transform: uppercase;
 
+}
+@media (width < 767px) {
+    .text22{
+        display: none;
+    }
+}
+@media only screen and (min-width:768px) and (max-width:1023px){
+    .text22{
+        margin-left: 1.5rem;
+
+    }
+}
+@media only screen and (min-width:1024px) and (max-width:1240px){
+    .text22{
+        margin-left: 1.5rem;
+
+    }
 }
 
 .progress-title{
