@@ -305,11 +305,7 @@ main{
             height: 100vh;
     }
 }
-@media only screen and  (min-width:378px) and (max-width:395px) {
-    /* .home-mobile{
-        height:90vh !important; 
-    } */
-}
+
 /*home mobile view end*/
 /*------------------------------------------*/
 
@@ -441,7 +437,8 @@ main{
  @media only screen and (min-width:1024px) and (max-width:1240px) {
     .home{
         padding: 0;
-        margin: 1rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
     }
     .hometext.mt-5.pt-5 {
         margin-top: 3rem !important;
@@ -450,7 +447,8 @@ main{
     }
     .home_btn{
         gap: 2rem;
-    }.home-img1{
+    }
+    .home-img1{
         margin-top: 3rem;
     }
     .home-img::after{
