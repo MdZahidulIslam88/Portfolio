@@ -18,10 +18,7 @@
 } */
 @media (width < 767px) {
     .home-mobile{
-        height: 100vh;
-    }
-    .home-all{
-        font-size: 14px;
+        height: 95vh;
     }
 }
 @media only screen and  (min-width:378px) and (max-width:395px) {
