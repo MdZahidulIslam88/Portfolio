@@ -78,8 +78,8 @@ header .social-icons a:hover{
     transition: .8s ease;
 }
 .navbar{
-    position: sticky;
-    top: 0;
+    position: fixed;
+    width: 100%;
     z-index: 999 !important;
 }
 /*---------------------------------------------------*/
@@ -288,7 +288,8 @@ main{
 /*------------------------------------------*/
 /*home mobile view  start */
 .home-mobile{
-    min-height: 90vh;
+      width: auto;
+      height: 651px;
       background:linear-gradient(0deg, rgba(0, 0, 0, 0.651), rgba(0, 0, 0, 0.661)),url(../image/me.jpg);
       background-size:cover;
       background-repeat: no-repeat;
@@ -299,10 +300,15 @@ main{
         display: none !important;
     }
 }
-@media only screen and  (min-width:378px) and (max-width:395px) {
+@media (width < 767px) {
     .home-mobile{
-        height:90vh !important; 
+            height: 100vh;
     }
+}
+@media only screen and  (min-width:378px) and (max-width:395px) {
+    /* .home-mobile{
+        height:90vh !important; 
+    } */
 }
 /*home mobile view end*/
 /*------------------------------------------*/
