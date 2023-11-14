@@ -78,7 +78,8 @@ header .social-icons a:hover{
     transition: .8s ease;
 }
 .navbar{
-    position: fixed;
+    position: sticky;
+    top: 0;
     width: 100%;
     z-index: 999 !important;
 }
@@ -287,8 +288,8 @@ main{
 
 /*------------------------------------------*/
 /*home mobile view  start */
-.home-mobile{
-      background:linear-gradient(0deg, rgba(0, 0, 0, 0.651), rgba(0, 0, 0, 0.661)),url(../image/me2.jpg);
+body{
+      background:linear-gradient(0deg, rgba(0, 0, 0, 0.651), rgba(0, 0, 0, 0.661)),url(../image/me.jpg);
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -300,12 +301,12 @@ main{
     }
     
 }
-@media (width < 767px) {
+/* @media (width < 767px) {
     
     .home-mobile{
-        height: 100vh;
+        height: 31.78rem;
     }
-}
+} */
 
 
 /*home mobile view end*/
