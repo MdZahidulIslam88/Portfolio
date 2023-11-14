@@ -301,12 +301,6 @@ body{
     }
     
 }
-/* @media (width < 767px) {
-    
-    .home-mobile{
-        height: 31.78rem;
-    }
-} */
 
 
 /*home mobile view end*/
@@ -375,38 +369,23 @@ body{
 /* Waves Animation end*/
 
 @media (width < 767px){
-    .home{
-        padding: 0;
-        flex-direction: column-reverse;
-    }
-    .hometext{
-        margin-top: -2rem !important;
-        text-align: center; 
-        position: relative;
-        z-index: 8;
-    }
+    
     h1.home-text2{
         font-size: 35px;
         margin-top: -5px !important;
     }
     .home_btn{
-        display: none;
-        margin: auto;
-        display: flex;
-        gap: 1rem;
         justify-content: center;
         margin-top: -2rem !important;
     }
     button.btn.btn11,.btn12{
         font-size: 14px;
     }
-    .home-img1{
-        z-index: 9 !important;
+ }
+ @media only screen and (min-width:390px) and (max-width:415px) {
+    .home-mobile{
+        margin-top: 6rem !important;
     }
-    .home-img::after{
-        right: -42vh;
-        top: 70vh;
-     }
  }
  @media only screen and (min-width:768px) and (max-width:1023px) {
     .home{
