@@ -294,10 +294,8 @@ main{
       background-size: cover;
       background-attachment: fixed;
       height: 100vh;
-      padding-top: 0 !important;
-      padding-bottom: 0 !important;
-      margin-top: 0 !important;
-      margin-bottom: 0 !important;
+      padding-bottom: -11rem !important;
+     
 }
 @media (width > 767px) {
     .home-mobile{
