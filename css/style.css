@@ -288,11 +288,11 @@ main{
 /*------------------------------------------*/
 /*home mobile view  start */
 .home-mobile{
-      background:linear-gradient(0deg, rgba(0, 0, 0, 0.651), rgba(0, 0, 0, 0.661)),url(../image/me.jpg);
+      /* background:linear-gradient(0deg, rgba(0, 0, 0, 0.651), rgba(0, 0, 0, 0.661)),url(../image/me.jpg);
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
-      background-attachment: fixed;
+      background-attachment: fixed; */
 }
 @media (width > 767px) {
     .home-mobile{
