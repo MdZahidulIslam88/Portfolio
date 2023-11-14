@@ -169,7 +169,7 @@ main{
 @media (width < 767px) {
     
     .home {
-        display: none;
+        display: none !important;
     }
 }
 .home .home-text1{
@@ -186,27 +186,27 @@ main{
     line-height: 1.875rem;
 }
 .home_btn{
-    display: flex;
-    gap: 1rem;
+    display: flex !important;
+    gap: 1rem !important;
 }
 .btn11{
-    z-index: 5;
-    position: relative;
-    background: none;
-    border: 2px solid #2FBF71;
-    transform: color 0.6s linear;
+    z-index: 5 !important;
+    position: relative !important;
+    background: none !important;
+    border: 2px solid #2FBF71 !important;
+    transform: color 0.6s linear !important;
 }
 .btn11:hover{
-    border: 2px solid #2FBF71;
+    border: 2px solid #2FBF71 !important;
 }
 .btn11::before{
-    content: "";
-    position: absolute;
+    content: "" !important;
+    position: absolute !important;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    background: #2FBF71;
+    background: #2FBF71 !important;
     transition: 0.5s;
     transform-origin: 0 0;
     transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
@@ -214,8 +214,8 @@ main{
     z-index: -1;
 }
 .btn11 a{
-    color: #FFFF;
-    text-decoration: none;
+    color: #FFFF !important;
+    text-decoration: none !important;
     z-index: 1;
 }
 .btn11:hover::before{
@@ -225,9 +225,9 @@ main{
 .btn12{
     margin-top: -.7rem;
     z-index: 5;
-    position: relative;
+    position: relative !important;
     background: none;
-    border: 2px solid #2FBF71;
+    border: 2px solid #2FBF71 !important;
     transform: color 0.6s linear;
 }
 .btn12:hover{
@@ -235,11 +235,11 @@ main{
 }
 .btn12::before{
     content: "";
-    position: absolute;
-    left: 0;
+    position: absolute !important;
+    left: 0 !important;
     top: 0;
-    width: 100%;
-    height: 100%;
+    width: 100% !important;
+    height: 100% !important;
     background: #2FBF71;
     transition: 0.5s;
     transform-origin: 0 0;
@@ -248,12 +248,12 @@ main{
     z-index: -1;
 }
 .btn12 a{
-    color: #FFFF;
-    text-decoration: none;
+    color: #FFFF !important;
+    text-decoration: none !important;
     z-index: 1;
 }
 .btn12:hover::before{
-    transform: scaley(1);
+    transform: scaley(1) !important;
 }
 .home-img::after{
     content: "";
@@ -315,8 +315,11 @@ main{
         font-size: 14px;
     }
     .home-mobile{
-        height: 100vh;
+        min-height: 100vh;
     }
+    .home-img::after{
+        display: none;
+     }
 }
 
 
