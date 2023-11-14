@@ -288,11 +288,11 @@ main{
 /*------------------------------------------*/
 /*home mobile view  start */
 .home-mobile{
-      /* background:linear-gradient(0deg, rgba(0, 0, 0, 0.651), rgba(0, 0, 0, 0.661)),url(../image/me.jpg);
+      background:linear-gradient(0deg, rgba(0, 0, 0, 0.651), rgba(0, 0, 0, 0.661)),url(../image/me.jpg);
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
-      background-attachment: fixed; */
+      background-attachment: fixed;
 }
 @media (width > 767px) {
     .home-mobile{
@@ -301,8 +301,18 @@ main{
     
 }
 @media (width < 767px) {
-    .hometext{
-        position: fixed;
+    h1.home-text2{
+        font-size: 35px;
+        margin-top: -5px !important;
+    }
+    .home_btn{
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        margin-top: -2rem !important;
+    }
+    button.btn.btn11,.btn12{
+        font-size: 14px;
     }
     .home-mobile{
         height: 100vh;
@@ -375,7 +385,7 @@ main{
 
 /* Waves Animation end*/
 
-@media (width < 767px){
+/* @media (width < 767px){
     .home{
         padding: 0;
         flex-direction: column-reverse;
@@ -408,7 +418,7 @@ main{
         right: -42vh;
         top: 70vh;
      }
- }
+ } */
  @media only screen and (min-width:768px) and (max-width:1023px) {
     .home{
         padding: 0px !important;
