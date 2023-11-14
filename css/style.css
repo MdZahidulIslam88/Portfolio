@@ -293,15 +293,19 @@ main{
       background-repeat: no-repeat;
       background-size: cover;
       background-attachment: fixed;
-      height: 564px;  
 }
 @media (width > 767px) {
     .home-mobile{
         display: none !important;
     }
+    
+}
+@media (width < 767px) {
     .hometext{
-
         position: fixed;
+    }
+    .home-mobile{
+        height: 100vh;
     }
 }
 
