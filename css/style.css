@@ -280,7 +280,7 @@ main{
 .me{
     position: absolute;
     border-radius: 100%;
-    padding-top: 2px;
+    padding-top: 3.46px;
 }
 /* home pc view end   */
 /*------------------------------------------*/
@@ -309,7 +309,7 @@ body{
 
 /* Waves Animation start*/
 .hero_area{
-    height: 14vh;
+    height: 12.77vh;
     margin-bottom: -3.9rem;
 }
 .waves {
