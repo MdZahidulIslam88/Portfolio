@@ -23,7 +23,7 @@
                 <div class="menubar mt-5 p-0">
                     <ul class="nav  flex-column text">
                         <li class="nav-item">
-                        <a class="nav-link active px-5" aria-current="page" href="index.html"><i class="fa fa-solid fa-house px-3"></i>Home</a>
+                        <a class="nav-link px-5" aria-current="page" href="index.html"><i class="fa fa-solid fa-house px-3"></i>Home</a>
                         </li>
                         <li class="nav-item">
                         <a class="nav-link px-5" aria-current="page"  href="About.html"><i class="fa fa-solid fa-user px-3"></i>About</a>
@@ -172,10 +172,10 @@
  <!-- ----------------------------------------------------- -->
    <!-- home mobile view start -->
    <div class="container-fluid">
-    <div class="row  home-mobile mt-5 pt-5">
-        <div class="col-md-12  text-center  d-flex align-items-center">
+    <div class="row  home-mobile mt-5 pt-5 ">
+        <div class="col text-center">
             <div class="hometext text-white ">
-                <h4 class="home-text1 mt-3">Hello, I am</h4>
+                <h4 class="home-text1">Hello, I am</h4>
                 <h1 class="home-text2">MD.Zahidul Islam</h1>
                 <p class="home-text3">I Am a <span class="home-text44"></span></p>
                 <h6 class="home-text5 mb-4">I design and develop services for customers of all sizes, specializing in creating stylish, modern websites, web services and online stores.</h6>
@@ -208,5 +208,37 @@
   });
    
     </script>
+
+<script>
+  // For smooth scroll to sections (if you're using # links)
+  document.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', function (e) {
+      const targetId = this.getAttribute('href');
+      if (targetId.startsWith("#")) {
+        e.preventDefault();
+        document.querySelector(targetId).scrollIntoView({
+          behavior: 'smooth'
+        });
+      }
+    });
+  });
+
+  // Highlight active menu item based on URL or interaction
+  const currentPage = window.location.pathname.split("/").pop();
+  const navLinks = document.querySelectorAll('.nav-link');
+
+  navLinks.forEach(link => {
+    const href = link.getAttribute('href');
+    if (href === currentPage || href === '' || href === '#') {
+      link.classList.add('active');
+    } else {
+      link.classList.remove('active');
+    }
+  });
+</script>
+
+
+
+
   </body>
 </html>

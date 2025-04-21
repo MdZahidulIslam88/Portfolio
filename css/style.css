@@ -3,11 +3,46 @@
     padding: 0;
     box-sizing: border-box;
 }
+.nav-link {
+    transition: all 0.4s ease;
+  }
+  
+  .nav-link i {
+    transition: color 0.4s ease;
+  }
+  
+  .nav-link.active {
+    background-color: #0c1425;
+    color: #ffffff !important;
+    font-weight: bold;
+    border-radius: 10px;
+  }
+  
+  .nav-link.active i {
+    color: #2FBF71 !important;
+  }
+  @keyframes fadeInActive {
+    from {
+      background-color: transparent;
+      color: #ccc;
+    }
+    to {
+      background-color: #0c1425;
+      color: #ffffff;
+    }
+  }
+  
+  .nav-link.active {
+    animation: fadeInActive 0.4s ease forwards;
+  }
+  
+  
 header{
     width: 250px;
     height: calc(100%);
      background: #0C0C14;
      position: relative;
+     border-right: 2px solid #121a2a;
      padding: 0 !important;
      z-index: 999;
 }
@@ -22,10 +57,13 @@ header{
 header .top1 img {
     width: 50%;
     border: 6px solid #ffffff;
-    border-radius: 50%;
+    border-radius: 100%;
     background: rgb(62, 88, 80);
     
 }
+
+
+  
 header .top1::after{
     content: "";
     width: 300px;
@@ -56,6 +94,7 @@ header .menubar ul li:hover i{
 header .menubar ul li:hover{
     background-color: #0c1425;
     transition: .4s ease;
+    border-radius: 10px;
 }
 
 header .social-icons{
@@ -98,7 +137,9 @@ header .social-icons a:hover{
     border-bottom: 1px solid #121a2a;
 }
 
-
+.home-text44{
+    color: #2FBF71;
+}
 .menu2 a{
     color: #FFFF;
     font-size: 17px;
@@ -154,7 +195,7 @@ nav  .text2{
 
 /* mobile view end */
 /* --------------------------------------------- */
-/* home pc view end   */
+/* home pc view start   */
 main{
     width: auto;
     height: auto;
@@ -181,6 +222,10 @@ main{
     font-size: 1.125rem;
     font-weight: 500;
 }
+.home-text4{
+    color: #2FBF71;
+}
+
 .home, .home-text5{
     font-size: 1.125rem;
     font-weight: 400;
@@ -289,7 +334,7 @@ main{
 /*------------------------------------------*/
 /*home mobile view  start */
 body{
-      background:linear-gradient(0deg, rgba(0, 0, 0, 0.651), rgba(0, 0, 0, 0.661)),url(../image/me.jpg);
+      background:linear-gradient(0deg, rgba(0, 0, 0, 0.651), rgba(0, 0, 0, 0.661)),url(../image/WhatsApp\ Image\ 2025-03-31\ at\ 21.57.24_8536df74.jpg);
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -450,3 +495,20 @@ body{
     top: -55vh;
      }
  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

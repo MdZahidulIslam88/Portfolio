@@ -1,3 +1,37 @@
+.nav-link {
+  transition: all 0.4s ease;
+}
+
+.nav-link i {
+  transition: color 0.4s ease;
+}
+
+.nav-link.active {
+  background-color: #0c1425;
+  color: #ffffff !important;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.nav-link.active i {
+  color: #2FBF71 !important;
+}
+@keyframes fadeInActive {
+  from {
+    background-color: transparent;
+    color: #ccc;
+  }
+  to {
+    background-color: #0c1425;
+    color: #ffffff;
+  }
+}
+
+.nav-link.active {
+  animation: fadeInActive 0.4s ease forwards;
+}
+
+
 .navbar{
   position: sticky;
   top: 0;
@@ -81,8 +115,39 @@ span{
 
  .pd img{
   width: 100%;
+  
   transition: all ease 0.5s ;
  }
+ .unique-image-wrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: linear-gradient(145deg, #1f1f1f, #2b2b2b); /* stylish dark background */
+  padding: 10px;
+}
+
+.unique-image-wrapper:hover {
+  transform: scale(1.03);
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.4);
+}
+
+.unique-image {
+  border-radius: 10px;
+  transition: transform 0.4s ease-in-out;
+  width: 100%;
+  height: auto;
+}
+
+.unique-image-wrapper:hover .unique-image {
+  transform: scale(1.05) rotate(-1deg);
+}
+.btn1.active {
+ border-color: #2FBF71; /* change this to your preferred active color */
+  color: #2FBF71;
+}
+
  @media screen and (min-width:320px) and (max-width:374px) {
   .skills1{
     margin-top: 0rem !important;

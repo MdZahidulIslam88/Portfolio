@@ -1,9 +1,36 @@
+.nav-link {
+    transition: all 0.4s ease;
+  }
+  
+  .nav-link i {
+    transition: color 0.4s ease;
+  }
+  
+  .nav-link.active {
+    background-color: #0c1425;
+    color: #ffffff !important;
+    font-weight: bold;
+    border-radius: 10px;
+  }
+  
+  .nav-link.active i {
+    color: #2FBF71 !important;
+  }
+  @keyframes fadeInActive {
+    from {
+      background-color: transparent;
+      color: #ccc;
+    }
+    to {
+      background-color: #0c1425;
+      color: #ffffff;
+    }
+  }
+  
+  .nav-link.active {
+    animation: fadeInActive 0.4s ease forwards;
+  }
 
-.navbar{
-    position: sticky !important;
-    top: 0 !important;
-    z-index: 999 !important;
-}
 .bg1{
     background-color: #070D1B;
     
