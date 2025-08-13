@@ -193,6 +193,17 @@ nav  .text2{
     
 }
 
+ /* Navbar shadow - darker and more prominent */
+.navbar {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.7); /* higher blur + opacity */
+}
+
+/* Offcanvas shadow - darker */
+.offcanvas {
+  box-shadow: 6px 0 25px rgba(0, 0, 0, 0.8); /* stronger shadow */
+}
+
+
 /* mobile view end */
 /* --------------------------------------------- */
 /* home pc view start   */
