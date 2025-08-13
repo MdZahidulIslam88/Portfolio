@@ -52,25 +52,26 @@ span{
     color: #2FBF71;
 }
 .skills1::before{
-    content: '';
-    position: absolute;
-    width:115px;
-    height: 2px;
-    left:50%;
-    margin-top: 3rem;
-    transform: translateX(-50%);
-    background-color: #3f4551;
+   content: '';
+  position: absolute;
+  width:115px !important;
+  height: 2px !important;
+  left:50% !important;
+  transform: translateX(-50%) !important;
+  margin-top: 3rem !important;
+  background-color: #3f4551 !important;
 
 }
 .skills1::after{
-    content: '';
-    position: absolute;
-    width:40px;
-    height: 2px;
-    left:50%;
-    transform: translateX(-50%);
-    margin-top: 3rem;
-    background-color: #2FBF71;
+   content: '';
+  position: absolute;
+  width:40px !important;
+  height: 2px !important;
+  left:50% !important;
+  transform: translateX(-50%) !important;
+  margin-top: 3rem !important;
+  
+  background-color: #2FBF71;
 
 }
 .text23{
@@ -204,24 +205,24 @@ span{
 }
 .skills3::before{
     content: '';
-    position: absolute;
-    width:115px;
-    height: 2px;
-    left:50%;
-    transform: translateX(-50%);
-    margin-top: 3rem;
-    background-color: #3f4551;
+    position: absolute !important;
+    width:115px !important;
+    height: 2px !important;
+    left:50% !important;
+    transform: translateX(-50%) !important;
+    margin-top: 3rem !important;
+    background-color: #3f4551 !important;
 
 }
 .skills3::after{
     content: '';
-    position: absolute;
-    width:40px;
-    height: 2px;
-    left:50%;
-    transform: translateX(-50%);
-    margin-top: 3rem;
-    background-color: #2FBF71;
+    position: absolute !important;
+    width:40px !important;
+    height: 2px !important;
+    left:50% !important;
+    transform: translateX(-50%) !important;
+    margin-top: 3rem !important;
+    background-color: #2FBF71 !important;
 
 }
 .text22{
