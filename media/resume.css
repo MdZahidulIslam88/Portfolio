@@ -208,8 +208,7 @@
 @media screen and (min-width: 1440px) and (max-width: 2560px){
     .skills1{
         font-size: 40px;
-        margin-left: 8.5rem;
-        margin-bottom: -1rem !important;
+        margin-bottom: -4rem !important;
         
     }
     .skills1::before{
@@ -217,7 +216,7 @@
         position: absolute;
         width:135px !important;
         height: 2px;
-        left:50% !important;
+        left:38% !important;
        
     }
     .skills1::after{
@@ -238,7 +237,29 @@
 }
 
 
-
+@media screen and (min-width: 1440px) and (max-width: 2560px){
+    .skills3{
+        font-size: 40px;
+        margin-left: 0.3rem !important;
+        margin-bottom: -4rem !important;
+        
+    }
+    .skills3::before{
+        left:55% !important;
+       
+    }
+    .skills3::after{
+        left:67% !important;
+       
+    }
+    .text22{
+        
+        font-size: 70px;
+        margin-top: 0rem !important;
+        margin-left: 14.8rem;
+       
+    }
+}
 
 /* skill start */
 @media screen and (min-width: 320px) and (max-width: 374px){
@@ -408,7 +429,7 @@
         transform: translateX(-50%);
         margin-top: 3rem;
         
-        background-color: #FF714A;
+        background-color: #2FBF71;
     
     }
 
