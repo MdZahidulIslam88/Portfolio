@@ -86,10 +86,20 @@ span{
     text-transform: uppercase;
 
 }
+
 @media (width < 767px) {
     .text23{
         display: none;
     }
+}
+
+@media screen and (min-width:768px) and (max-width:2560px) {
+
+
+.text23{
+  margin-left: 0rem !important;
+}
+ 
 }
 .fn{
     display: inline;
@@ -255,6 +265,44 @@ span{
 
     }
 }
+@media screen and (min-width: 425px) and (max-width: 2560px) {
+    .skills2::after{
+    background-color: #2FBF71 !important;
+}
+.skills1::after{
+    background-color: #2FBF71 !important;
+}
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .skills2 {
+        margin-top: 0rem !important;
+        margin-bottom: 0rem !important;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+    .skills1::before{
+        margin-left: 12% !important;
+    }
+    .text23{
+        top: 0.5rem !important;
+    }
+    .skills3{
+        margin-left: -16.5rem !important;
+    }
+
+    .skills3::before{
+        margin-left: -5% !important;
+    }
+
+    .skills3::after{
+        margin-left: -17% !important;
+    }
+
+}
+
 
 .progress-title{
     font-size: 16px;
