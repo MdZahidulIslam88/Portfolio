@@ -636,7 +636,7 @@ main {
 
 .home-mobile {
     display: block; /* default for mobile */
-    min-height: 88vh !important;
+    min-height: 85vh !important;
     padding: 0rem !important;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.66)),
                 url('../image/zahidul.jpg');
@@ -797,3 +797,4 @@ main {
 }
 
 /* Main End */
+
