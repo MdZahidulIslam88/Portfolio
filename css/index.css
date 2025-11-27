@@ -229,7 +229,7 @@ main {
     width: auto !important;
     min-height: 100vh;   /* full screen height */
     margin-left: 250px;  /* for sidebar */
-    /* background: #10101A; */
+    background: #10101A;
     overflow: hidden;
 }
 
@@ -239,7 +239,7 @@ main {
     }
 }
 
-#canvas {
+/* #canvas {
     position: fixed;
     top: 0;
     left: 0;
@@ -248,7 +248,7 @@ main {
     z-index: -2;
     background: #10101A;
     display: block;
-}
+} */
 
 
 /* Container */
