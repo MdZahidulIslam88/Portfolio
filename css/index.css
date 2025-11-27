@@ -227,7 +227,7 @@ nav .text2{
 main {
     padding: 0 !important;
     width: auto !important;
-    min-height: 100vh;   /* full screen height */
+    min-height: 92vh;   /* full screen height */
     margin-left: 250px;  /* for sidebar */
     background: #10101A;
     overflow: hidden;
