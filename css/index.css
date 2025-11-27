@@ -135,7 +135,10 @@ header .social-icons a:hover{
 
 .bg2{
     background: #0C0C14;
+    position: fixed;
+    box-shadow: 0 0 60px 8px #2fbf7067;
 }
+
 
 .name1{
     color: #FFFF !important;
@@ -209,7 +212,7 @@ nav .text2{
 
 /* Navbar shadow */
 .navbar {
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 6px 20px rgba(49, 49, 49, 0.7);
 }
 
 /* Offcanvas shadow */
@@ -640,7 +643,7 @@ main {
 
 .home-mobile {
     display: block; /* default for mobile */
-    min-height: 89.9vh !important;
+    min-height: 100vh !important;
     /* padding: 0rem !important; */
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.66)),
                 url('../image/zahidul.jpg');
