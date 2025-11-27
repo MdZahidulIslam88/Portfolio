@@ -224,12 +224,16 @@ nav .text2{
 
 
 /* Main Start */
+body{
+    background: #10101A;
+}
 main {
     padding: 0 !important;
     width: auto !important;
-    min-height: 92vh;   /* full screen height */
+    /* min-height: 95vh;   */
+    
     margin-left: 250px;  /* for sidebar */
-    background: #10101A;
+    /* background: #10101A; */
     overflow: hidden;
 }
 
