@@ -227,8 +227,7 @@ nav .text2{
 main {
     padding: 0 !important;
     width: auto !important;
-    /* min-height: 100vh; */
-    height: auto;
+    min-height: 100vh;   /* full screen height */
     margin-left: 250px;  /* for sidebar */
     background: #10101A;
     overflow: hidden;
@@ -636,28 +635,19 @@ main {
 
 
 .home-mobile {
-    display: block;
-    min-height: 89.9vh !important;
-    padding: 0 !important;
-
+    display: block; /* default for mobile */
+    min-height: 88vh !important;
+    padding: 0rem !important;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.66)),
                 url('../image/zahidul.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
-    /* Disable fixed background for mobile (fixes iOS & Android issues) */
-    background-attachment: scroll; 
+    background-attachment: fixed;
+    /* padding: 3.94rem 1rem; */
     box-sizing: border-box;
+  
 }
-@media only screen and (max-width: 480px) {
-    .home-mobile {
-        background-attachment: scroll !important;
-        background-size: cover !important;
-        background-position: center !important;
-    }
-}
-
 
 /* Hide mobile section on tablet/desktop */
 @media (min-width: 768px) {
@@ -668,8 +658,7 @@ main {
 
 
 /* Text responsiveness */
-.home-mobile .home-text1 { font-size: 1.5rem; font-weight: 500; 
-}
+.home-mobile .home-text1 { font-size: 1.5rem; font-weight: 500; }
 .home-mobile .home-text2 { font-size: 2rem; font-weight: 700; }
 .home-mobile .home-text3 { font-size: 1rem; }
 .home-mobile .home-text44 { color: #2FBF71; }
@@ -694,7 +683,6 @@ main {
    font-size: 0.79rem !important;
    
 }
-
 }
 
 
