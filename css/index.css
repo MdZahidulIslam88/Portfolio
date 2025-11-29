@@ -135,8 +135,6 @@ header .social-icons a:hover{
 
 .bg2{
     background: #0C0C14;
-    position: fixed;
-    box-shadow: 0 0 60px 8px #2fbf7067;
 }
 
 
@@ -804,5 +802,6 @@ main {
         right: -70vh;
     }
 }
+
 
 /* Main End */
