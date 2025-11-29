@@ -233,7 +233,7 @@ body{
 main {
     padding: 0 !important;
     /* width: auto !important; */
-    /* min-height: 95vh;   */
+    min-height: 89.9vh !important;  
     
     margin-left: 250px;  /* for sidebar */
     /* background: #10101A; */
@@ -242,7 +242,7 @@ main {
 
 @media (max-width: 768px) {
     main{
-        min-height: 85vh !important;
+        min-height: 89vh !important;
     }
 }
 
@@ -643,7 +643,7 @@ main {
 
 .home-mobile {
     display: block; /* default for mobile */
-    min-height: 100vh !important;
+    min-height: 93vh !important;
     /* padding: 0rem !important; */
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.66)),
                 url('../image/zahidul.jpg');
@@ -652,7 +652,7 @@ main {
     background-size: cover;
     background-attachment: fixed;
     padding: 3.94rem 1rem;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
   
 }
 
@@ -803,6 +803,4 @@ main {
     }
 }
 
-
 /* Main End */
-
