@@ -232,7 +232,7 @@ body{
 }
 main {
     padding: 0 !important;
-    width: auto !important;
+    /* width: auto !important; */
     /* min-height: 95vh;   */
     
     margin-left: 250px;  /* for sidebar */
@@ -242,7 +242,7 @@ main {
 
 @media (max-width: 768px) {
     main{
-        min-height: 89vh !important;
+        min-height: 85vh !important;
     }
 }
 
@@ -805,3 +805,4 @@ main {
 
 
 /* Main End */
+
