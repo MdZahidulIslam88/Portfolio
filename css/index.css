@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 body{
-    background: #10101A;
+    background: #0C0C14;
 }
 .nav-link {
     transition: all 0.4s ease;
@@ -564,7 +564,7 @@ main {
 
 .home-mobile {
     
-    min-height: 86vh !important;
+    min-height: 86.35vh !important;
     /* padding: 0rem !important; */
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.66)),
                 url('../image/zahidul.jpg');
