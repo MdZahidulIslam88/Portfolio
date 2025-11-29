@@ -145,7 +145,9 @@ header .social-icons a:hover{
     background: #0C0C14;
     border-bottom: 1px solid #121a2a;
 }
-
+.mobile-nav .active{
+    color: #2FBF71 !important;
+}
 .home-text44{
     color: #2FBF71;
 }

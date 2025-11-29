@@ -149,6 +149,9 @@ header .social-icons a:hover{
 .home-text44{
     color: #2FBF71;
 }
+.mobile-nav .active{
+    color: #2FBF71 !important;
+}
 
 .menu2 a{
     color: #FFFF;
