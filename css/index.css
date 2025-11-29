@@ -3,7 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+body{
+    background: #10101A;
+}
 .nav-link {
     transition: all 0.4s ease;
 }
@@ -222,43 +224,13 @@ nav .text2{
 
 /* mobile view end */
 
-
-
-
-
-/* Main Start */
-body{
-    background: #10101A;
-}
 main {
-    padding: 0 !important;
-    /* width: auto !important; */
-    min-height: 89.9vh !important;  
-    
-    margin-left: 250px;  /* for sidebar */
-    /* background: #10101A; */
-    overflow: hidden;
+  
+   margin-left: 250px;
 }
 
-@media (max-width: 768px) {
-    main{
-        min-height: 89vh !important;
-    }
-}
-
-/* #canvas {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    z-index: -2;
-    background: #10101A;
-    display: block;
-} */
 
 
-/* Container */
 /* Social Media Icons */
     .social-links {
         display: flex;
@@ -354,56 +326,6 @@ main {
     }
 }
 
-/* .home-img1 {
-    position: relative;
-    width: 100%;
-    max-width: 470px;
-    height: auto;
-} */
-
-/* ME image - perfectly round */
-/* .me-img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100%;
-    transform: translate(-50%, -45%);
-    border-radius: 50%;
-    z-index: 888;
-} */
-
-/* Green border - perfectly centered */
-/* .green-border {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100%;
-    transform: translate(-50%, -44%);
-    z-index: 777;
-} */
-
-/* ------------------- Responsive ------------------- */
-
-/* Tablets */
-/* @media (max-width: 992px) {
-    .home-img1 { max-width: 350px; }
-    .me-img { width: 75%; }
-    .green-border { width: 100%; }
-} */
-
-/* Mobile */
-/* @media (max-width: 768px) {
-    .home-img1 { max-width: 300px; }
-    .me-img { width: 100%; }
-    .green-border { width: 100%; }
-} */
-
-/* Extra small */
-/* @media (max-width: 480px) {
-    .home-img1 { max-width: 240px; }
-    .me-img { width: 85%; }
-    .green-border { width: 100%; }
-} */
 
 .green-border {
     width: 100%;
@@ -640,10 +562,9 @@ main {
 
 /* Waves Animation end*/
 
-
 .home-mobile {
-    display: block; /* default for mobile */
-    min-height: 100vh !important;
+    
+    min-height: 86vh !important;
     /* padding: 0rem !important; */
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.66)),
                 url('../image/zahidul.jpg');
@@ -652,7 +573,7 @@ main {
     background-size: cover;
     background-attachment: fixed;
     padding: 3.94rem 1rem;
-    box-sizing: border-box;
+  
   
 }
 
