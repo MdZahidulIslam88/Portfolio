@@ -244,6 +244,7 @@ main {
 @media (max-width: 768px) {
     main{
         min-height: 89vh !important;
+        display: none !important;
     }
 }
 
